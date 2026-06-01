@@ -1,0 +1,113 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model BudgetMonth {
+  id        Int      @id @default(autoincrement())
+  month     Int
+  year      Int
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  incomes      Income[]
+  budgetRows   BudgetRow[]
+  transactions Transaction[]
+
+  @@unique([month, year])
+}
+
+model Income {
+  id            Int          @id @default(autoincrement())
+  budgetMonthId Int
+  source        String       // WIFE_SALARY | JOB1_SALARY | JOB2_SALARY | COMMISSION | OTHER
+  amount        Decimal
+  paycheckDate  DateTime?
+  label         String?
+  isManual      Boolean      @default(false)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  budgetMonth BudgetMonth @relation(fields: [budgetMonthId], references: [id], onDelete: Cascade)
+}
+
+model BudgetCategory {
+  id        Int     @id @default(autoincrement())
+  name      String
+  icon      String?
+  sortOrder Int
+  isActive  Boolean @default(true)
+
+  budgetRows BudgetRow[]
+}
+
+model BudgetRow {
+  id              Int      @id @default(autoincrement())
+  budgetMonthId   Int
+  categoryId      Int
+  label           String
+  budgetAmount    Decimal  @default(0)
+  actualAmount    Decimal  @default(0)
+  notes           String?
+  alertThreshold  Decimal  @default(90)
+  alertSent       Boolean  @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  budgetMonth  BudgetMonth    @relation(fields: [budgetMonthId], references: [id], onDelete: Cascade)
+  category     BudgetCategory @relation(fields: [categoryId], references: [id])
+  transactions Transaction[]
+  alerts       Alert[]
+}
+
+model Transaction {
+  id              Int      @id @default(autoincrement())
+  budgetRowId     Int?
+  budgetMonthId   Int
+  amount          Decimal
+  merchant        String
+  description     String?
+  transactionDate DateTime
+  source          String   @default("MANUAL") // CHASE_EMAIL | MANUAL
+  rawEmailId      String?
+  createdAt       DateTime @default(now())
+
+  budgetRow   BudgetRow?   @relation(fields: [budgetRowId], references: [id], onDelete: SetNull)
+  budgetMonth BudgetMonth  @relation(fields: [budgetMonthId], references: [id], onDelete: Cascade)
+
+  @@unique([rawEmailId])
+}
+
+model Alert {
+  id          Int      @id @default(autoincrement())
+  budgetRowId Int
+  type        String   // EMAIL | SMS
+  sentAt      DateTime @default(now())
+  message     String
+
+  budgetRow BudgetRow @relation(fields: [budgetRowId], references: [id], onDelete: Cascade)
+}
+
+model Settings {
+  id                  Int     @id @default(1)
+  alertEmail          String?
+  alertPhone          String?
+  taxRate             Decimal @default(0.30)
+  wifeSalaryGross     Decimal @default(160000)
+  job1SalaryGross     Decimal @default(130000)
+  job2SalaryGross     Decimal @default(75000)
+  wifePayFrequency    String  @default("BIWEEKLY")
+  job1PayFrequency    String  @default("BIWEEKLY")
+  job2PayFrequency    String  @default("BIMONTHLY")
+  wifeFirstPayDate    String  @default("2025-01-10")
+  job1FirstPayDate    String  @default("2025-01-03")
+  gmailAccount1       String?
+  gmailAccount2       String?
+  gmailToken1         String?
+  gmailToken2         String?
+}
