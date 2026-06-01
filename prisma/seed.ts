@@ -90,7 +90,8 @@ async function main() {
     },
   });
 
-  // Delete existing categories and recreate clean
+  // Delete rows first (they reference categories), then categories
+  await prisma.budgetRow.deleteMany({});
   await prisma.budgetCategory.deleteMany({});
 
   for (const cat of categories) {
@@ -110,8 +111,7 @@ async function main() {
     create: { month: 6, year: 2026 },
   });
 
-  // Remove old rows for this month and recreate
-  await prisma.budgetRow.deleteMany({ where: { budgetMonthId: june2026.id } });
+  // Rows already cleared above — create fresh for June 2026
 
   const dbCategories = await prisma.budgetCategory.findMany({ orderBy: { sortOrder: "asc" } });
 
