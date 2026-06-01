@@ -79,7 +79,6 @@ export interface Alert {
 export interface Settings {
   id: number;
   alertEmail?: string | null;
-  alertPhone?: string | null;
   taxRate: string | number;
   wifeSalaryGross: string | number;
   job1SalaryGross: string | number;
@@ -91,6 +90,8 @@ export interface Settings {
   job1FirstPayDate: string;
   gmailAccount1?: string | null;
   gmailAccount2?: string | null;
+  gmailToken1?: string | null;
+  gmailToken2?: string | null;
 }
 
 export interface MonthData {

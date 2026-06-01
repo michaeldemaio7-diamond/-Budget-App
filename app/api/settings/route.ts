@@ -20,7 +20,6 @@ export async function PATCH(req: NextRequest) {
     const body = await req.json();
     const {
       alertEmail,
-      alertPhone,
       taxRate,
       wifeSalaryGross,
       job1SalaryGross,
@@ -40,7 +39,6 @@ export async function PATCH(req: NextRequest) {
       where: { id: 1 },
       update: {
         ...(alertEmail !== undefined && { alertEmail }),
-        ...(alertPhone !== undefined && { alertPhone }),
         ...(taxRate !== undefined && { taxRate: new Decimal(taxRate) }),
         ...(wifeSalaryGross !== undefined && { wifeSalaryGross: new Decimal(wifeSalaryGross) }),
         ...(job1SalaryGross !== undefined && { job1SalaryGross: new Decimal(job1SalaryGross) }),

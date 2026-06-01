@@ -1,13 +1,4 @@
-/**
- * Alert sending stubs.
- *
- * To implement real alerts:
- * - Email: Use nodemailer or a service like SendGrid/Resend
- *   npm install nodemailer @types/nodemailer
- *   or: npm install resend
- * - SMS: Use Twilio
- *   npm install twilio
- */
+import nodemailer from "nodemailer";
 
 export interface AlertPayload {
   budgetRowId: number;
@@ -17,94 +8,82 @@ export interface AlertPayload {
   actualAmount: number;
   percentUsed: number;
   alertEmail?: string | null;
-  alertPhone?: string | null;
 }
 
-/**
- * Send an email alert when a budget row is near/over its limit.
- * TODO: Implement with a real email service.
- */
+function createTransporter() {
+  return nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+  });
+}
+
 export async function sendEmailAlert(payload: AlertPayload): Promise<boolean> {
   const { rowLabel, categoryName, budgetAmount, actualAmount, percentUsed, alertEmail } = payload;
 
-  if (!alertEmail) {
-    console.warn("No alert email configured, skipping email alert");
+  if (!alertEmail) return false;
+  if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+    console.warn("[alerts] SMTP_USER or SMTP_PASS not set — skipping email alert");
     return false;
   }
 
-  const subject = `Budget Alert: ${categoryName} - ${rowLabel} at ${percentUsed.toFixed(0)}%`;
-  const message = `
-Budget Alert
+  const remaining = budgetAmount - actualAmount;
+  const isOver = actualAmount > budgetAmount;
+  const subject = isOver
+    ? `🚨 Budget Exceeded: ${categoryName} — ${rowLabel}`
+    : `⚠️ Budget Alert: ${categoryName} — ${rowLabel} at ${percentUsed.toFixed(0)}%`;
 
-Your budget for ${categoryName} > ${rowLabel} has reached ${percentUsed.toFixed(1)}%.
+  const html = `
+    <div style="font-family: sans-serif; max-width: 480px; margin: 0 auto;">
+      <div style="background: ${isOver ? "#dc2626" : "#d97706"}; color: white; padding: 16px 20px; border-radius: 8px 8px 0 0;">
+        <h2 style="margin: 0; font-size: 18px;">${isOver ? "🚨 Budget Exceeded" : "⚠️ Budget Alert"}</h2>
+      </div>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-top: none; padding: 20px; border-radius: 0 0 8px 8px;">
+        <p style="font-size: 15px; color: #334155; margin: 0 0 16px;">
+          <strong>${categoryName} › ${rowLabel}</strong> has reached <strong>${percentUsed.toFixed(1)}%</strong> of its budget.
+        </p>
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 8px 0; color: #64748b;">Budgeted</td>
+            <td style="padding: 8px 0; text-align: right; font-weight: 600;">$${budgetAmount.toFixed(2)}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 8px 0; color: #64748b;">Spent</td>
+            <td style="padding: 8px 0; text-align: right; font-weight: 600; color: ${isOver ? "#dc2626" : "#334155"};">$${actualAmount.toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 0; color: #64748b;">Remaining</td>
+            <td style="padding: 8px 0; text-align: right; font-weight: 600; color: ${remaining < 0 ? "#dc2626" : "#16a34a"};">${remaining < 0 ? "-" : ""}$${Math.abs(remaining).toFixed(2)}</td>
+          </tr>
+        </table>
+        <div style="margin-top: 20px;">
+          <a href="${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}"
+             style="background: #2563eb; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-size: 14px;">
+            View Budget
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
 
-  Budgeted: $${budgetAmount.toFixed(2)}
-  Spent:    $${actualAmount.toFixed(2)}
-  Remaining: $${(budgetAmount - actualAmount).toFixed(2)}
-
-Log in to review your budget: ${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}
-  `.trim();
-
-  // TODO: Replace with actual email sending
-  // Option 1: Using Resend
-  // const resend = new Resend(process.env.RESEND_API_KEY);
-  // await resend.emails.send({
-  //   from: 'budget-app@yourdomain.com',
-  //   to: alertEmail,
-  //   subject,
-  //   text: message,
-  // });
-
-  // Option 2: Using nodemailer with Gmail SMTP
-  // const transporter = nodemailer.createTransport({
-  //   service: 'gmail',
-  //   auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS }
-  // });
-  // await transporter.sendMail({ from: process.env.SMTP_USER, to: alertEmail, subject, text: message });
-
-  console.log(`[EMAIL ALERT STUB] To: ${alertEmail}\nSubject: ${subject}\n${message}`);
-  return true;
-}
-
-/**
- * Send an SMS alert when a budget row is near/over its limit.
- * TODO: Implement with Twilio.
- */
-export async function sendSmsAlert(payload: AlertPayload): Promise<boolean> {
-  const { rowLabel, categoryName, percentUsed, budgetAmount, actualAmount, alertPhone } = payload;
-
-  if (!alertPhone) {
-    console.warn("No alert phone configured, skipping SMS alert");
+  try {
+    const transporter = createTransporter();
+    await transporter.sendMail({
+      from: `Budget App <${process.env.SMTP_USER}>`,
+      to: alertEmail,
+      subject,
+      html,
+    });
+    return true;
+  } catch (err) {
+    console.error("[alerts] Failed to send email:", err);
     return false;
   }
-
-  const message = `Budget Alert: ${categoryName} - ${rowLabel} is at ${percentUsed.toFixed(0)}% ($${actualAmount.toFixed(0)} / $${budgetAmount.toFixed(0)})`;
-
-  // TODO: Replace with actual SMS sending via Twilio
-  // const twilio = require('twilio');
-  // const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
-  // await client.messages.create({
-  //   body: message,
-  //   from: process.env.TWILIO_PHONE_NUMBER,
-  //   to: alertPhone,
-  // });
-
-  console.log(`[SMS ALERT STUB] To: ${alertPhone}\n${message}`);
-  return true;
 }
 
-/**
- * Check a budget row and send alerts if it has crossed the threshold.
- */
-export async function checkAndSendAlert(payload: AlertPayload): Promise<{
-  emailSent: boolean;
-  smsSent: boolean;
-}> {
-  const emailSent = payload.alertEmail
-    ? await sendEmailAlert(payload)
-    : false;
-  const smsSent = payload.alertPhone
-    ? await sendSmsAlert(payload)
-    : false;
-  return { emailSent, smsSent };
+export async function checkAndSendAlert(payload: AlertPayload): Promise<{ emailSent: boolean }> {
+  const emailSent = await sendEmailAlert(payload);
+  return { emailSent };
 }

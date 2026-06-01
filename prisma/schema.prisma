@@ -96,7 +96,6 @@ model Alert {
 model Settings {
   id                  Int     @id @default(1)
   alertEmail          String?
-  alertPhone          String?
   taxRate             Decimal @default(0.30)
   wifeSalaryGross     Decimal @default(160000)
   job1SalaryGross     Decimal @default(130000)

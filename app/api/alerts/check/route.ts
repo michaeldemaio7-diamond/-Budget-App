@@ -2,15 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { checkAndSendAlert } from "@/lib/alerts";
 
-/**
- * POST /api/alerts/check
- *
- * Check all budget rows for the given month and send alerts for those
- * that have exceeded their alert threshold.
- *
- * Body: { month?: number, year?: number }
- * Defaults to current month/year.
- */
+// POST /api/alerts/check
+// Body: { month?: number, year?: number }
+// Checks all budget rows for the given month and sends email alerts for rows over their threshold.
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json().catch(() => ({}));
@@ -29,14 +23,11 @@ export async function POST(req: NextRequest) {
     }
 
     const rows = await prisma.budgetRow.findMany({
-      where: {
-        budgetMonthId: budgetMonth.id,
-        alertSent: false,
-      },
+      where: { budgetMonthId: budgetMonth.id, alertSent: false },
       include: { category: true },
     });
 
-    const alerts: { rowId: number; label: string; percent: number; emailSent: boolean; smsSent: boolean }[] = [];
+    const alerts: { rowId: number; label: string; percent: number; emailSent: boolean }[] = [];
 
     for (const row of rows) {
       const budget = parseFloat(row.budgetAmount.toString());
@@ -46,54 +37,38 @@ export async function POST(req: NextRequest) {
       if (budget <= 0) continue;
 
       const percentUsed = (actual / budget) * 100;
+      if (percentUsed < threshold) continue;
 
-      if (percentUsed >= threshold) {
-        const result = await checkAndSendAlert({
-          budgetRowId: row.id,
-          rowLabel: row.label,
-          categoryName: row.category.name,
-          budgetAmount: budget,
-          actualAmount: actual,
-          percentUsed,
-          alertEmail: settings?.alertEmail,
-          alertPhone: settings?.alertPhone,
+      const result = await checkAndSendAlert({
+        budgetRowId: row.id,
+        rowLabel: row.label,
+        categoryName: row.category.name,
+        budgetAmount: budget,
+        actualAmount: actual,
+        percentUsed,
+        alertEmail: settings?.alertEmail,
+      });
+
+      if (result.emailSent) {
+        await prisma.alert.create({
+          data: {
+            budgetRowId: row.id,
+            type: "EMAIL",
+            message: `Budget alert: ${row.category.name} - ${row.label} at ${percentUsed.toFixed(0)}%`,
+          },
         });
-
-        // Log the alert
-        if (result.emailSent) {
-          await prisma.alert.create({
-            data: {
-              budgetRowId: row.id,
-              type: "EMAIL",
-              message: `Budget alert: ${row.category.name} - ${row.label} at ${percentUsed.toFixed(0)}%`,
-            },
-          });
-        }
-        if (result.smsSent) {
-          await prisma.alert.create({
-            data: {
-              budgetRowId: row.id,
-              type: "SMS",
-              message: `Budget alert: ${row.category.name} - ${row.label} at ${percentUsed.toFixed(0)}%`,
-            },
-          });
-        }
-
-        // Mark as sent if any alert was sent
-        if (result.emailSent || result.smsSent) {
-          await prisma.budgetRow.update({
-            where: { id: row.id },
-            data: { alertSent: true },
-          });
-        }
-
-        alerts.push({
-          rowId: row.id,
-          label: `${row.category.name} - ${row.label}`,
-          percent: Math.round(percentUsed),
-          ...result,
+        await prisma.budgetRow.update({
+          where: { id: row.id },
+          data: { alertSent: true },
         });
       }
+
+      alerts.push({
+        rowId: row.id,
+        label: `${row.category.name} - ${row.label}`,
+        percent: Math.round(percentUsed),
+        emailSent: result.emailSent,
+      });
     }
 
     return NextResponse.json({
