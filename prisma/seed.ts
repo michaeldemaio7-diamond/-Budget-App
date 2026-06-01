@@ -156,10 +156,9 @@ async function main() {
   await prisma.income.deleteMany({ where: { budgetMonthId: june2026.id } });
 
   const paychecks = calculatePaychecksForMonth(2026, 6, {
-    taxRate: 0.3,
-    wifeSalaryGross: 160000,
-    job1SalaryGross: 130000,
-    job2SalaryGross: 75000,
+    wifeNetPaycheck: 3800,
+    job1NetPaycheck: 3400,
+    job2NetPaycheck: 2200,
     wifeFirstPayDate: "2026-05-29",
     job1FirstPayDate: "2026-05-29",
   });
