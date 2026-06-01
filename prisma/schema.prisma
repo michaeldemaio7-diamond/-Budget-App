@@ -54,6 +54,7 @@ model BudgetRow {
   budgetAmount    Decimal  @default(0)
   actualAmount    Decimal  @default(0)
   notes           String?
+  isFixed         Boolean  @default(false)
   alertThreshold  Decimal  @default(90)
   alertSent       Boolean  @default(false)
   createdAt       DateTime @default(now())

@@ -46,6 +46,7 @@ export interface BudgetRow {
   budgetAmount: string | number;
   actualAmount: string | number;
   notes?: string | null;
+  isFixed: boolean;
   alertThreshold: string | number;
   alertSent: boolean;
   createdAt: string;
