@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { Settings } from "@/types";
 import CurrencyInput from "@/components/ui/CurrencyInput";
+import { calculatePaychecksForMonth } from "@/lib/paychecks";
 
 function SettingsPageInner() {
   const searchParams = useSearchParams();
@@ -182,6 +183,15 @@ function SettingsPageInner() {
           </div>
         </div>
       </section>
+
+      {/* Paycheck Schedule Preview */}
+      <PaycheckSchedule
+        wifeFirstPayDate={settings.wifeFirstPayDate}
+        job1FirstPayDate={settings.job1FirstPayDate}
+        wifeNet={parseFloat(String(settings.wifeNetPaycheck ?? 3800))}
+        job1Net={parseFloat(String(settings.job1NetPaycheck ?? 3400))}
+        job2Net={parseFloat(String(settings.job2NetPaycheck ?? 2200))}
+      />
 
       {/* Notification Settings */}
       <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
@@ -367,6 +377,115 @@ function GmailAccountCard({
         )}
       </div>
     </div>
+  );
+}
+
+const MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function PaycheckSchedule({
+  wifeFirstPayDate, job1FirstPayDate, wifeNet, job1Net, job2Net,
+}: {
+  wifeFirstPayDate: string;
+  job1FirstPayDate: string;
+  wifeNet: number;
+  job1Net: number;
+  job2Net: number;
+}) {
+  const now = new Date();
+  const year = now.getFullYear();
+  const fmt = (n: number) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
+
+  // Build full year schedule
+  const monthRows = Array.from({ length: 12 }, (_, i) => {
+    const month = i + 1;
+    const checks = calculatePaychecksForMonth(year, month, {
+      wifeNetPaycheck: wifeNet,
+      job1NetPaycheck: job1Net,
+      job2NetPaycheck: job2Net,
+      wifeFirstPayDate,
+      job1FirstPayDate,
+    });
+
+    const wife = checks.filter((c) => c.source === "WIFE_SALARY");
+    const job1 = checks.filter((c) => c.source === "JOB1_SALARY");
+    const job2 = checks.filter((c) => c.source === "JOB2_SALARY");
+    const total = checks.reduce((s, c) => s + c.amount, 0);
+    const isThreePaycheck = wife.length === 3 || job1.length === 3;
+    const isCurrent = month === now.getMonth() + 1;
+
+    return { month, wife, job1, job2, total, isThreePaycheck, isCurrent };
+  });
+
+  return (
+    <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+      <div className="px-5 py-4 border-b border-slate-100">
+        <h2 className="font-semibold text-slate-800">Paycheck Schedule — {year}</h2>
+        <p className="text-xs text-slate-500 mt-0.5">
+          Biweekly from {wifeFirstPayDate} · 3-paycheck months highlighted in blue
+        </p>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-xs text-slate-500 uppercase tracking-wide">
+            <tr>
+              <th className="px-4 py-3 text-left">Month</th>
+              <th className="px-4 py-3 text-left">Wife Salary</th>
+              <th className="px-4 py-3 text-left">Job 1</th>
+              <th className="px-4 py-3 text-left">Job 2</th>
+              <th className="px-4 py-3 text-right">Total Expected</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100">
+            {monthRows.map(({ month, wife, job1, job2, total, isThreePaycheck, isCurrent }) => (
+              <tr
+                key={month}
+                className={
+                  isCurrent ? "bg-amber-50" :
+                  isThreePaycheck ? "bg-blue-50" : "hover:bg-slate-50"
+                }
+              >
+                <td className="px-4 py-2.5 font-medium text-slate-700">
+                  {MONTH_NAMES[month - 1]}
+                  {isThreePaycheck && (
+                    <span className="ml-1.5 text-xs bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded">3 checks</span>
+                  )}
+                  {isCurrent && (
+                    <span className="ml-1.5 text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">current</span>
+                  )}
+                </td>
+                <td className="px-4 py-2.5 text-slate-600">
+                  {wife.map((c) => (
+                    <div key={c.date.toISOString()} className="text-xs">
+                      {c.date.toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                      <span className="text-slate-400 ml-1">{fmt(c.amount)}</span>
+                    </div>
+                  ))}
+                </td>
+                <td className="px-4 py-2.5 text-slate-600">
+                  {job1.map((c) => (
+                    <div key={c.date.toISOString()} className="text-xs">
+                      {c.date.toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                      <span className="text-slate-400 ml-1">{fmt(c.amount)}</span>
+                    </div>
+                  ))}
+                </td>
+                <td className="px-4 py-2.5 text-slate-600">
+                  {job2.map((c) => (
+                    <div key={c.date.toISOString()} className="text-xs">
+                      {c.date.toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                      <span className="text-slate-400 ml-1">{fmt(c.amount)}</span>
+                    </div>
+                  ))}
+                </td>
+                <td className="px-4 py-2.5 text-right font-semibold text-slate-800">
+                  {fmt(total)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
   );
 }
 
