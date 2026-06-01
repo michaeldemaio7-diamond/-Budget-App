@@ -84,7 +84,7 @@ async function main() {
       wifeSalaryGross: new Decimal(160000),
       job1SalaryGross: new Decimal(130000),
       job2SalaryGross: new Decimal(75000),
-      wifeNetPaycheck: new Decimal(7600),
+      wifeNetPaycheck: new Decimal(3800),
       job1NetPaycheck: new Decimal(3400),
       job2NetPaycheck: new Decimal(2200),
       gmailAccount1: "michaeldemaio7@gmail.com",
@@ -144,8 +144,8 @@ async function main() {
     wifeSalaryGross: 160000,
     job1SalaryGross: 130000,
     job2SalaryGross: 75000,
-    wifeFirstPayDate: "2025-01-10",
-    job1FirstPayDate: "2025-01-03",
+    wifeFirstPayDate: "2026-05-29",
+    job1FirstPayDate: "2026-05-29",
   });
 
   for (const pc of paychecks) {

@@ -13,8 +13,6 @@ export default function TransactionsPage() {
   const [filterSource, setFilterSource] = useState("");
   const [filterUnassigned, setFilterUnassigned] = useState(false);
   const [showAddForm, setShowAddForm] = useState(false);
-  const [assigning, setAssigning] = useState<number | null>(null);
-  const [assignRowId, setAssignRowId] = useState<string>("");
   const [saving, setSaving] = useState(false);
 
   const now = new Date();
@@ -58,25 +56,6 @@ export default function TransactionsPage() {
   useEffect(() => {
     fetchTransactions();
   }, [fetchTransactions]);
-
-  const handleAssign = async (txId: number) => {
-    setSaving(true);
-    try {
-      await fetch("/api/transactions/assign", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          transactionId: txId,
-          budgetRowId: assignRowId ? parseInt(assignRowId) : null,
-        }),
-      });
-      setAssigning(null);
-      setAssignRowId("");
-      fetchTransactions();
-    } finally {
-      setSaving(false);
-    }
-  };
 
   const handleDelete = async (txId: number) => {
     if (!confirm("Delete this transaction?")) return;
@@ -289,51 +268,34 @@ export default function TransactionsPage() {
                       {tx.description || "—"}
                     </td>
                     <td className="px-4 py-3 text-sm">
-                      {assigning === tx.id ? (
-                        <div className="flex items-center gap-2">
-                          <select
-                            value={assignRowId}
-                            onChange={(e) => setAssignRowId(e.target.value)}
-                            className="border border-slate-200 rounded px-1.5 py-1 text-xs w-36"
-                          >
-                            <option value="">Unassigned</option>
-                            {allRows.map((r) => (
-                              <option key={r.id} value={r.id}>
-                                {r.category.name} → {r.label}
-                              </option>
-                            ))}
-                          </select>
-                          <button
-                            onClick={() => handleAssign(tx.id)}
-                            disabled={saving}
-                            className="text-xs bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700 disabled:opacity-50"
-                          >
-                            OK
-                          </button>
-                          <button
-                            onClick={() => setAssigning(null)}
-                            className="text-xs text-slate-400"
-                          >
-                            ✕
-                          </button>
-                        </div>
-                      ) : (
-                        <span
-                          onClick={() => {
-                            setAssigning(tx.id);
-                            setAssignRowId(tx.budgetRowId ? String(tx.budgetRowId) : "");
-                          }}
-                          className="cursor-pointer hover:underline"
-                        >
-                          {tx.budgetRow ? (
-                            <span className="text-blue-600 text-xs">
-                              {tx.budgetRow.category?.name} → {tx.budgetRow.label}
-                            </span>
-                          ) : (
-                            <span className="text-yellow-500 text-xs">Unassigned</span>
-                          )}
-                        </span>
-                      )}
+                      <select
+                        value={tx.budgetRowId ? String(tx.budgetRowId) : ""}
+                        onChange={async (e) => {
+                          setSaving(true);
+                          await fetch("/api/transactions/assign", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                              transactionId: tx.id,
+                              budgetRowId: e.target.value ? parseInt(e.target.value) : null,
+                            }),
+                          });
+                          setSaving(false);
+                          fetchTransactions();
+                        }}
+                        className={`border rounded px-1.5 py-1 text-xs w-44 ${
+                          tx.budgetRowId
+                            ? "border-slate-200 text-slate-700 bg-white"
+                            : "border-yellow-300 text-yellow-700 bg-yellow-50"
+                        }`}
+                      >
+                        <option value="">— Unassigned —</option>
+                        {allRows.map((r) => (
+                          <option key={r.id} value={r.id}>
+                            {r.category.name} → {r.label}
+                          </option>
+                        ))}
+                      </select>
                     </td>
                     <td className="px-4 py-3 text-sm text-right font-semibold text-slate-800">
                       {formatCurrency(typeof tx.amount === "string" ? parseFloat(tx.amount) : tx.amount)}

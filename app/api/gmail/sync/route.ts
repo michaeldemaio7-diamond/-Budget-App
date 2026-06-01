@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { syncChaseEmails } from "@/lib/gmail";
+import { categorizeMerchant } from "@/lib/categorize";
 import { Decimal } from "@prisma/client/runtime/library";
 
 // POST /api/gmail/sync
@@ -33,8 +34,11 @@ export async function POST(req: NextRequest) {
 
     let created = 0;
     let skipped = 0;
+    let autoCategorized = 0;
+    let miscBucketed = 0;
 
     for (const tx of transactions) {
+      // Skip duplicates
       if (tx.rawEmailId) {
         const exists = await prisma.transaction.findUnique({
           where: { rawEmailId: tx.rawEmailId },
@@ -46,12 +50,44 @@ export async function POST(req: NextRequest) {
       const budgetMonth = await prisma.budgetMonth.findUnique({
         where: { month_year: { month: txDate.getMonth() + 1, year: txDate.getFullYear() } },
       });
-
       if (!budgetMonth) { skipped++; continue; }
 
+      // Load available budget rows for this month to use for categorization
+      const rows = await prisma.budgetRow.findMany({
+        where: { budgetMonthId: budgetMonth.id },
+        include: { category: true },
+      });
+
+      const rowOptions = rows.map((r) => ({
+        id: r.id,
+        label: r.label,
+        categoryName: r.category.name,
+      }));
+
+      // Find the Miscellaneous row as fallback
+      const miscRow = rows.find(
+        (r) => r.category.name.toLowerCase().includes("misc") || r.label.toLowerCase().includes("misc")
+      );
+
+      // AI categorization
+      let assignedRowId: number | null = null;
+      let aiCategorized = false;
+
+      const aiRowId = await categorizeMerchant(tx.merchant, tx.amount, tx.description, rowOptions);
+      if (aiRowId !== null) {
+        assignedRowId = aiRowId;
+        aiCategorized = true;
+        autoCategorized++;
+      } else if (miscRow) {
+        assignedRowId = miscRow.id;
+        miscBucketed++;
+      }
+
+      // Create transaction
       await prisma.transaction.create({
         data: {
           budgetMonthId: budgetMonth.id,
+          budgetRowId: assignedRowId,
           amount: new Decimal(tx.amount),
           merchant: tx.merchant,
           description: tx.description,
@@ -60,6 +96,15 @@ export async function POST(req: NextRequest) {
           rawEmailId: tx.rawEmailId || null,
         },
       });
+
+      // Update the budget row's actualAmount
+      if (assignedRowId) {
+        await prisma.budgetRow.update({
+          where: { id: assignedRowId },
+          data: { actualAmount: { increment: tx.amount } },
+        });
+      }
+
       created++;
     }
 
@@ -71,9 +116,11 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: `Sync complete for ${email ?? `account ${account}`}. Created: ${created}, Skipped: ${skipped}`,
+      message: `Synced ${email ?? `account ${account}`}: ${created} new (${autoCategorized} auto-categorized, ${miscBucketed} → Miscellaneous), ${skipped} skipped`,
       created,
       skipped,
+      autoCategorized,
+      miscBucketed,
       total: transactions.length,
     });
   } catch (error) {

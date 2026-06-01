@@ -12,6 +12,7 @@
     "db:studio": "prisma studio"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
     "@prisma/client": "^5.14.0",
     "@types/nodemailer": "^8.0.0",
     "clsx": "^2.1.1",
