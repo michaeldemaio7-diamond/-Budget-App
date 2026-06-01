@@ -10,6 +10,7 @@ const categories = [
     icon: "🏠",
     sortOrder: 1,
     rows: [
+      { label: "Mortgage",     budgetAmount: 1870, isFixed: true  },
       { label: "Comcast",      budgetAmount: 340,  isFixed: false },
       { label: "Phone",        budgetAmount: 45,   isFixed: true  },
       { label: "Hair",         budgetAmount: 60,   isFixed: true  },
@@ -77,7 +78,20 @@ async function main() {
 
   await prisma.settings.upsert({
     where: { id: 1 },
-    update: {},
+    update: {
+      taxRate: new Decimal(0.3),
+      wifeSalaryGross: new Decimal(160000),
+      job1SalaryGross: new Decimal(130000),
+      job2SalaryGross: new Decimal(75000),
+      wifeNetPaycheck: new Decimal(3800),
+      job1NetPaycheck: new Decimal(3400),
+      job2NetPaycheck: new Decimal(2200),
+      gmailAccount1: "michaeldemaio7@gmail.com",
+      gmailAccount2: "shanibebe@gmail.com",
+      alertEmail: "michaeldemaio7@gmail.com",
+      wifeFirstPayDate: "2026-05-29",
+      job1FirstPayDate: "2026-05-29",
+    },
     create: {
       id: 1,
       taxRate: new Decimal(0.3),
@@ -90,6 +104,8 @@ async function main() {
       gmailAccount1: "michaeldemaio7@gmail.com",
       gmailAccount2: "shanibebe@gmail.com",
       alertEmail: "michaeldemaio7@gmail.com",
+      wifeFirstPayDate: "2026-05-29",
+      job1FirstPayDate: "2026-05-29",
     },
   });
 

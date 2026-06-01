@@ -53,9 +53,21 @@ function statusColor(budget: number, actual: number) {
   return { bar: "bg-green-400", text: "text-green-600" };
 }
 
-function EditableAmount({ row, onSaved }: { row: BudgetRowWithCategory; onSaved: () => void }) {
+function EditableCell({
+  value: initialValue,
+  field,
+  rowId,
+  onSaved,
+  dimmed,
+}: {
+  value: number;
+  field: "budgetAmount" | "actualAmount";
+  rowId: number;
+  onSaved: () => void;
+  dimmed?: boolean;
+}) {
   const [editing, setEditing] = useState(false);
-  const [value, setValue] = useState(parseFloat(String(row.budgetAmount)).toFixed(2));
+  const [value, setValue] = useState(initialValue.toFixed(2));
   const [saving, setSaving] = useState(false);
 
   const save = async () => {
@@ -65,7 +77,7 @@ function EditableAmount({ row, onSaved }: { row: BudgetRowWithCategory; onSaved:
     await fetch(`/api/budget-rows`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ id: row.id, budgetAmount: num }),
+      body: JSON.stringify({ id: rowId, [field]: num }),
     });
     setSaving(false);
     setEditing(false);
@@ -94,11 +106,14 @@ function EditableAmount({ row, onSaved }: { row: BudgetRowWithCategory; onSaved:
 
   return (
     <button
-      onClick={() => { setValue(parseFloat(String(row.budgetAmount)).toFixed(2)); setEditing(true); }}
-      className="text-sm text-right text-slate-700 hover:text-blue-600 hover:underline decoration-dashed underline-offset-2 cursor-text group"
+      onClick={() => { setValue(initialValue.toFixed(2)); setEditing(true); }}
+      className={clsx(
+        "text-sm text-right hover:underline decoration-dashed underline-offset-2 cursor-text group block w-full",
+        dimmed ? "text-slate-500 hover:text-slate-700" : "text-slate-700 hover:text-blue-600"
+      )}
       title="Click to edit"
     >
-      {formatCurrency(parseFloat(String(row.budgetAmount)))}
+      {formatCurrency(initialValue)}
       <span className="ml-1 opacity-0 group-hover:opacity-100 text-xs text-blue-400">✏</span>
     </button>
   );
@@ -180,10 +195,12 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
                           {row.isFixed ? (
                             <span className="text-slate-500">{formatCurrency(budget)}</span>
                           ) : (
-                            <EditableAmount row={row} onSaved={onBudgetUpdate ?? (() => {})} />
+                            <EditableCell value={budget} field="budgetAmount" rowId={row.id} onSaved={onBudgetUpdate ?? (() => {})} dimmed />
                           )}
                         </td>
-                        <td className="px-4 py-2.5 text-right text-slate-700">{formatCurrency(actual)}</td>
+                        <td className="px-4 py-2.5 text-right">
+                          <EditableCell value={actual} field="actualAmount" rowId={row.id} onSaved={onBudgetUpdate ?? (() => {})} />
+                        </td>
                         <td className={clsx("px-4 py-2.5 text-right font-medium", colors.text)}>
                           {remaining >= 0 ? formatCurrency(remaining) : `-${formatCurrency(Math.abs(remaining))}`}
                         </td>
