@@ -21,6 +21,9 @@
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.3.0"
   },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
