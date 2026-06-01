@@ -27,6 +27,8 @@ export default function DashboardPage() {
   const [data, setData] = useState<MonthData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [syncing, setSyncing] = useState(false);
+  const [syncMsg, setSyncMsg] = useState<string | null>(null);
 
   const fetchData = useCallback(async () => {
     setLoading(true);
@@ -36,7 +38,6 @@ export default function DashboardPage() {
       const res = await fetch(`/api/months/${monthYear}`);
       if (!res.ok) {
         if (res.status === 404) {
-          // Month doesn't exist yet, try to create it
           const createRes = await fetch("/api/months", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -61,38 +62,120 @@ export default function DashboardPage() {
     }
   }, [month, year]);
 
+  // Auto-sync Gmail if tokens are set and last sync was >24h ago
+  const autoSyncGmail = useCallback(async (settings: Settings) => {
+    if (!settings.gmailToken1 && !settings.gmailToken2) return;
+    if (settings.lastGmailSync) {
+      const lastSync = new Date(settings.lastGmailSync);
+      const hoursSince = (Date.now() - lastSync.getTime()) / (1000 * 60 * 60);
+      if (hoursSince < 24) return;
+    }
+    // Sync both accounts silently in background
+    const sinceDate = new Date(year, month - 1, 1).toISOString();
+    if (settings.gmailToken1) {
+      fetch("/api/gmail/sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ account: 1, sinceDate }),
+      });
+    }
+    if (settings.gmailToken2) {
+      fetch("/api/gmail/sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ account: 2, sinceDate }),
+      });
+    }
+  }, [month, year]);
+
   useEffect(() => {
     fetchData();
   }, [fetchData]);
+
+  useEffect(() => {
+    if (data?.settings) autoSyncGmail(data.settings);
+  }, [data?.settings, autoSyncGmail]);
 
   const handleMonthChange = (m: number, y: number) => {
     setMonth(m);
     setYear(y);
   };
 
+  const handleSyncGmail = async () => {
+    setSyncing(true);
+    setSyncMsg(null);
+    const sinceDate = new Date(year, month - 1, 1).toISOString();
+    try {
+      const results = await Promise.all([
+        fetch("/api/gmail/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ account: 1, sinceDate }),
+        }).then((r) => r.json()),
+        fetch("/api/gmail/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ account: 2, sinceDate }),
+        }).then((r) => r.json()),
+      ]);
+      const totalCreated = results.reduce((s, r) => s + (r.created || 0), 0);
+      const errors = results.filter((r) => r.error).map((r) => r.error);
+      if (errors.length > 0) {
+        setSyncMsg(`⚠️ ${errors[0]}`);
+      } else {
+        setSyncMsg(`✓ Synced — ${totalCreated} new transaction${totalCreated !== 1 ? "s" : ""} imported`);
+        if (totalCreated > 0) fetchData();
+      }
+    } catch {
+      setSyncMsg("⚠️ Sync failed — check your Gmail connection in Settings");
+    } finally {
+      setSyncing(false);
+      setTimeout(() => setSyncMsg(null), 6000);
+    }
+  };
+
   const totalIncome = data?.incomes.reduce((s, i) => {
-    return s + (typeof i.amount === "string" ? parseFloat(i.amount) : i.amount);
+    return s + parseFloat(String(i.amount));
   }, 0) || 0;
 
   const totalExpenses = data?.budgetRows.reduce((s, r) => {
-    return s + (typeof r.actualAmount === "string" ? parseFloat(r.actualAmount) : r.actualAmount);
+    return s + parseFloat(String(r.actualAmount));
   }, 0) || 0;
+
+  const gmailConnected = !!(data?.settings?.gmailToken1 || data?.settings?.gmailToken2);
 
   return (
     <div className="max-w-7xl mx-auto space-y-6 pb-20 md:pb-6">
-      {/* Month selector */}
+      {/* Header row */}
       <div className="flex items-center justify-between flex-wrap gap-3">
         <MonthSelector month={month} year={year} onChange={handleMonthChange} />
-        <button
-          onClick={fetchData}
-          className="text-sm text-slate-500 hover:text-slate-700 flex items-center gap-1"
-        >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-          </svg>
-          Refresh
-        </button>
+        <div className="flex items-center gap-3">
+          {gmailConnected && (
+            <button
+              onClick={handleSyncGmail}
+              disabled={syncing}
+              className="flex items-center gap-1.5 text-sm bg-white border border-slate-200 text-slate-600 hover:text-blue-600 hover:border-blue-300 px-3 py-1.5 rounded-lg shadow-sm disabled:opacity-50 transition-colors"
+            >
+              <svg className={`w-4 h-4 ${syncing ? "animate-spin" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              {syncing ? "Syncing..." : "Sync Gmail"}
+            </button>
+          )}
+          <button
+            onClick={fetchData}
+            className="text-sm text-slate-500 hover:text-slate-700 flex items-center gap-1"
+          >
+            Refresh
+          </button>
+        </div>
       </div>
+
+      {syncMsg && (
+        <div className={`text-sm rounded-lg px-4 py-2.5 border ${syncMsg.startsWith("✓") ? "bg-green-50 border-green-200 text-green-700" : "bg-amber-50 border-amber-200 text-amber-700"}`}>
+          {syncMsg}
+        </div>
+      )}
 
       {loading && (
         <div className="flex items-center justify-center py-20">
@@ -108,27 +191,23 @@ export default function DashboardPage() {
 
       {!loading && !error && data && (
         <>
-          {/* Savings overview */}
           <SavingsCard totalIncome={totalIncome} totalExpenses={totalExpenses} />
 
-          {/* Income summary */}
           <IncomeSummary
             incomes={data.incomes}
             month={month}
             year={year}
+            settings={data.settings}
             onRefresh={fetchData}
           />
 
-          {/* Charts row */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <SpendingPieChart rows={data.budgetRows} />
             <BudgetBarChart rows={data.budgetRows} />
           </div>
 
-          {/* Budget summary */}
-          <BudgetSummary rows={data.budgetRows} month={month} year={year} />
+          <BudgetSummary rows={data.budgetRows} month={month} year={year} onBudgetUpdate={fetchData} />
 
-          {/* Bottom row */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <CreditCardSummary transactions={data.transactions} rows={data.budgetRows} />
             <RecentTransactions transactions={data.transactions} />

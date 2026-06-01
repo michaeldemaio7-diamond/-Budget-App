@@ -50,7 +50,8 @@ export async function syncChaseEmails(
 
   const gmail = google.gmail({ version: "v1", auth: oauth2Client });
   const sinceTimestamp = Math.floor(sinceDate.getTime() / 1000);
-  const query = `from:no.reply.alerts@chase.com after:${sinceTimestamp}`;
+  // Catches Chase Freedom, Sapphire, and all other Chase card notifications
+  const query = `from:no.reply.alerts@chase.com (subject:transaction OR subject:charged) after:${sinceTimestamp}`;
 
   const listRes = await gmail.users.messages.list({
     userId: "me",

@@ -63,6 +63,12 @@ export async function POST(req: NextRequest) {
       created++;
     }
 
+    // Stamp last sync time
+    await prisma.settings.update({
+      where: { id: 1 },
+      data: { lastGmailSync: new Date() },
+    });
+
     return NextResponse.json({
       success: true,
       message: `Sync complete for ${email ?? `account ${account}`}. Created: ${created}, Skipped: ${skipped}`,

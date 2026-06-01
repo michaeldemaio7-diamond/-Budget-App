@@ -101,6 +101,9 @@ model Settings {
   wifeSalaryGross     Decimal @default(160000)
   job1SalaryGross     Decimal @default(130000)
   job2SalaryGross     Decimal @default(75000)
+  wifeNetPaycheck     Decimal @default(7600)
+  job1NetPaycheck     Decimal @default(3400)
+  job2NetPaycheck     Decimal @default(2200)
   wifePayFrequency    String  @default("BIWEEKLY")
   job1PayFrequency    String  @default("BIWEEKLY")
   job2PayFrequency    String  @default("BIMONTHLY")
@@ -110,4 +113,5 @@ model Settings {
   gmailAccount2       String?
   gmailToken1         String?
   gmailToken2         String?
+  lastGmailSync       DateTime?
 }

@@ -84,6 +84,10 @@ export interface Settings {
   wifeSalaryGross: string | number;
   job1SalaryGross: string | number;
   job2SalaryGross: string | number;
+  wifeNetPaycheck?: string | number;
+  job1NetPaycheck?: string | number;
+  job2NetPaycheck?: string | number;
+  lastGmailSync?: string | null;
   wifePayFrequency: string;
   job1PayFrequency: string;
   job2PayFrequency: string;
