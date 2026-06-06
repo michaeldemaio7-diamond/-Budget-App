@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { formatCurrency } from "@/lib/formatters";
 
 interface Goal {
@@ -19,19 +19,10 @@ function toNum(v: string | number) {
 }
 
 function InlineText({
-  value,
-  placeholder,
-  goalId,
-  field,
-  onSaved,
-  className,
+  value, placeholder, goalId, field, onSaved, className,
 }: {
-  value: string | null;
-  placeholder?: string;
-  goalId: number;
-  field: string;
-  onSaved: (id: number, field: string, val: string) => void;
-  className?: string;
+  value: string | null; placeholder?: string; goalId: number; field: string;
+  onSaved: (id: number, field: string, val: string) => void; className?: string;
 }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(value ?? "");
@@ -51,40 +42,24 @@ function InlineText({
 
   if (editing) {
     return (
-      <input
-        autoFocus
-        type="text"
-        value={draft}
+      <input autoFocus type="text" value={draft}
         onChange={(e) => setDraft(e.target.value)}
         onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setEditing(false); }}
-        onBlur={save}
-        placeholder={placeholder}
+        onBlur={save} placeholder={placeholder}
         className={`border border-blue-400 rounded px-2 py-0.5 text-sm w-full focus:outline-none focus:ring-1 focus:ring-blue-400 ${className ?? ""}`}
       />
     );
   }
-
   return (
-    <button
-      onClick={() => { setDraft(value ?? ""); setEditing(true); }}
-      className={`text-sm text-left w-full cursor-text group hover:text-blue-600 ${className ?? ""}`}
-      title="Click to edit"
-    >
+    <button onClick={() => { setDraft(value ?? ""); setEditing(true); }}
+      className={`text-sm text-left w-full cursor-text group hover:text-blue-600 ${className ?? ""}`} title="Click to edit">
       {value || <span className="italic text-slate-300 group-hover:text-slate-400">{placeholder ?? "—"}</span>}
       {saving && <span className="ml-1 text-xs text-slate-400">...</span>}
     </button>
   );
 }
 
-function InlineCost({
-  value,
-  goalId,
-  onSaved,
-}: {
-  value: number;
-  goalId: number;
-  onSaved: (id: number, val: number) => void;
-}) {
+function InlineCost({ value, goalId, onSaved }: { value: number; goalId: number; onSaved: (id: number, val: number) => void }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(value.toFixed(2));
   const [saving, setSaving] = useState(false);
@@ -107,12 +82,7 @@ function InlineCost({
     return (
       <div className="flex items-center gap-1">
         <span className="text-slate-400 text-xs">$</span>
-        <input
-          autoFocus
-          type="number"
-          step="1"
-          min="0"
-          value={draft}
+        <input autoFocus type="number" step="1" min="0" value={draft}
           onChange={(e) => setDraft(e.target.value)}
           onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setEditing(false); }}
           onBlur={save}
@@ -122,13 +92,9 @@ function InlineCost({
       </div>
     );
   }
-
   return (
-    <button
-      onClick={() => { setDraft(value.toFixed(2)); setEditing(true); }}
-      className="text-sm cursor-text group hover:text-blue-600 text-slate-700"
-      title="Click to edit"
-    >
+    <button onClick={() => { setDraft(value.toFixed(2)); setEditing(true); }}
+      className="text-sm cursor-text group hover:text-blue-600 text-slate-700" title="Click to edit">
       {formatCurrency(value)}
       <span className="ml-1 opacity-0 group-hover:opacity-100 text-xs text-blue-400">✏</span>
     </button>
@@ -160,7 +126,7 @@ function AddGoalRow({ onAdded }: { onAdded: () => void }) {
   if (!open) {
     return (
       <tr className="border-t border-dashed border-slate-200">
-        <td colSpan={5} className="px-5 py-2">
+        <td colSpan={6} className="px-5 py-2">
           <button onClick={() => setOpen(true)} className="text-xs text-blue-500 hover:text-blue-700 flex items-center gap-1">
             <span className="text-base leading-none">+</span> Add goal
           </button>
@@ -171,6 +137,7 @@ function AddGoalRow({ onAdded }: { onAdded: () => void }) {
 
   return (
     <tr className="border-t border-dashed border-blue-200 bg-blue-50/40">
+      <td className="px-3 py-2 text-slate-300 text-center">⋮⋮</td>
       <td className="px-4 py-2">
         <input autoFocus type="text" placeholder="Goal name" value={name} onChange={(e) => setName(e.target.value)}
           onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setOpen(false); }}
@@ -209,6 +176,8 @@ function AddGoalRow({ onAdded }: { onAdded: () => void }) {
 export default function GoalsPage() {
   const [goals, setGoals] = useState<Goal[]>([]);
   const [loading, setLoading] = useState(true);
+  const dragIndex = useRef<number | null>(null);
+  const [dragOver, setDragOver] = useState<number | null>(null);
 
   const fetchGoals = useCallback(async () => {
     setLoading(true);
@@ -225,16 +194,42 @@ export default function GoalsPage() {
   const handleTextSaved = (id: number, field: string, val: string) => {
     setGoals((prev) => prev.map((g) => (g.id === id ? { ...g, [field]: val } : g)));
   };
-
   const handleCostSaved = (id: number, val: number) => {
     setGoals((prev) => prev.map((g) => (g.id === id ? { ...g, costNeeded: val } : g)));
+  };
+
+  const handleDragStart = (index: number) => {
+    dragIndex.current = index;
+  };
+
+  const handleDrop = async (dropIndex: number) => {
+    if (dragIndex.current === null || dragIndex.current === dropIndex) {
+      setDragOver(null);
+      return;
+    }
+    const reordered = [...goals];
+    const [moved] = reordered.splice(dragIndex.current, 1);
+    reordered.splice(dropIndex, 0, moved);
+    const withNewOrder = reordered.map((g, i) => ({ ...g, sortOrder: i + 1 }));
+    setGoals(withNewOrder);
+    setDragOver(null);
+    dragIndex.current = null;
+
+    await fetch("/api/goals", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ order: withNewOrder.map((g) => ({ id: g.id, sortOrder: g.sortOrder })) }),
+    });
+    fetchGoals(); // re-fetch to get updated achieved states
   };
 
   return (
     <div className="max-w-5xl mx-auto space-y-5 pb-20 md:pb-6">
       <div>
         <h1 className="text-xl font-bold text-slate-800">Financial Goals</h1>
-        <p className="text-sm text-slate-500 mt-0.5">Goals are achieved in order as cumulative savings milestones are reached</p>
+        <p className="text-sm text-slate-500 mt-0.5">
+          Goals are achieved in order — drag to reprioritize. Checkmarks are permanent once earned.
+        </p>
       </div>
 
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
@@ -245,7 +240,8 @@ export default function GoalsPage() {
             <table className="w-full text-sm">
               <thead className="bg-slate-50 text-xs text-slate-500 uppercase tracking-wide">
                 <tr>
-                  <th className="px-5 py-3 text-left w-36">Goal</th>
+                  <th className="px-3 py-3 w-8"></th>
+                  <th className="px-4 py-3 text-left w-36">Goal</th>
                   <th className="px-4 py-3 text-left">Description</th>
                   <th className="px-4 py-3 text-left w-40">Cost / Dollars Needed</th>
                   <th className="px-4 py-3 text-center w-32">Goal Achieved</th>
@@ -253,9 +249,25 @@ export default function GoalsPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                {goals.map((goal) => (
-                  <tr key={goal.id} className={goal.achieved ? "bg-green-50/50 hover:bg-green-50" : "hover:bg-slate-50/60"}>
-                    <td className="px-5 py-3">
+                {goals.map((goal, index) => (
+                  <tr
+                    key={goal.id}
+                    draggable
+                    onDragStart={() => handleDragStart(index)}
+                    onDragOver={(e) => { e.preventDefault(); setDragOver(index); }}
+                    onDragLeave={() => setDragOver(null)}
+                    onDrop={() => handleDrop(index)}
+                    onDragEnd={() => { setDragOver(null); dragIndex.current = null; }}
+                    className={[
+                      goal.achieved ? "bg-green-50/50" : "",
+                      dragOver === index ? "border-t-2 border-blue-400 bg-blue-50/30" : "",
+                      "hover:bg-slate-50/60 transition-colors",
+                    ].join(" ")}
+                  >
+                    <td className="px-3 py-3 text-slate-300 cursor-grab active:cursor-grabbing text-center select-none text-base">
+                      ⋮⋮
+                    </td>
+                    <td className="px-4 py-3">
                       <InlineText value={goal.name} placeholder="Goal name" goalId={goal.id} field="name" onSaved={handleTextSaved}
                         className={goal.achieved ? "font-semibold text-green-700" : "font-medium text-slate-800"} />
                     </td>

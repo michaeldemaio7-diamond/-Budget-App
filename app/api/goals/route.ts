@@ -59,6 +59,24 @@ export async function PATCH(req: NextRequest) {
   }
 }
 
+export async function PUT(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const { order } = body as { order: { id: number; sortOrder: number }[] };
+    if (!Array.isArray(order)) return NextResponse.json({ error: "order array required" }, { status: 400 });
+
+    await Promise.all(
+      order.map(({ id, sortOrder }) =>
+        prisma.goal.update({ where: { id }, data: { sortOrder } })
+      )
+    );
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error("PUT /api/goals error:", error);
+    return NextResponse.json({ error: "Failed to reorder goals" }, { status: 500 });
+  }
+}
+
 export async function DELETE(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
