@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, use } from "react";
 import Link from "next/link";
 import { BudgetRowWithCategory, BudgetCategory, Transaction } from "@/types";
 import { formatCurrency, formatMonthYear, getStatusColor } from "@/lib/formatters";
@@ -21,7 +21,8 @@ interface PageData {
   transactions: Transaction[];
 }
 
-export default function BudgetDetailPage({ params }: { params: { monthYear: string } }) {
+export default function BudgetDetailPage({ params }: { params: Promise<{ monthYear: string }> }) {
+  const { monthYear } = use(params);
   const [data, setData] = useState<PageData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -35,7 +36,7 @@ export default function BudgetDetailPage({ params }: { params: { monthYear: stri
   const fetchData = useCallback(async () => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/months/${params.monthYear}`);
+      const res = await fetch(`/api/months/${monthYear}`);
       if (!res.ok) throw new Error("Month not found");
       const d = await res.json();
       setData(d);
@@ -44,7 +45,7 @@ export default function BudgetDetailPage({ params }: { params: { monthYear: stri
     } finally {
       setLoading(false);
     }
-  }, [params.monthYear]);
+  }, [monthYear]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
 

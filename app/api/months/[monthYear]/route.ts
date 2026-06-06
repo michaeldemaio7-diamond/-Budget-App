@@ -12,10 +12,11 @@ function parseMonthYear(monthYear: string): { month: number; year: number } | nu
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { monthYear: string } }
+  { params }: { params: Promise<{ monthYear: string }> }
 ) {
   try {
-    const parsed = parseMonthYear(params.monthYear);
+    const { monthYear } = await params;
+    const parsed = parseMonthYear(monthYear);
     if (!parsed) {
       return NextResponse.json({ error: "Invalid month/year format. Use YYYY-MM" }, { status: 400 });
     }
@@ -90,10 +91,11 @@ export async function GET(
 
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { monthYear: string } }
+  { params }: { params: Promise<{ monthYear: string }> }
 ) {
   try {
-    const parsed = parseMonthYear(params.monthYear);
+    const { monthYear } = await params;
+    const parsed = parseMonthYear(monthYear);
     if (!parsed) {
       return NextResponse.json({ error: "Invalid month/year format" }, { status: 400 });
     }
