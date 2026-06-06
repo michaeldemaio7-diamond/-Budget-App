@@ -94,6 +94,19 @@ model Alert {
   budgetRow BudgetRow @relation(fields: [budgetRowId], references: [id], onDelete: Cascade)
 }
 
+model MonthlySavings {
+  id                 Int      @id @default(autoincrement())
+  month              Int
+  year               Int
+  actualSavingsEOM   Decimal  @default(0)
+  cumulativeSavings  Decimal  @default(0)
+  notes              String?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@unique([month, year])
+}
+
 model Settings {
   id                  Int     @id @default(1)
   alertEmail          String?

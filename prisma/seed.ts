@@ -207,6 +207,25 @@ async function main() {
     },
   });
 
+  // Seed MonthlySavings rows: Jun 2026 – Dec 2027
+  const savingsMonths: { month: number; year: number }[] = [];
+  for (let m = 6; m <= 12; m++) savingsMonths.push({ month: m, year: 2026 });
+  for (let m = 1; m <= 12; m++) savingsMonths.push({ month: m, year: 2027 });
+
+  for (const { month, year } of savingsMonths) {
+    await prisma.monthlySavings.upsert({
+      where: { month_year: { month, year } },
+      update: {},
+      create: {
+        month,
+        year,
+        actualSavingsEOM: new Decimal(0),
+        cumulativeSavings: new Decimal(0),
+        notes: null,
+      },
+    });
+  }
+
   console.log("Seed complete!");
 }
 
