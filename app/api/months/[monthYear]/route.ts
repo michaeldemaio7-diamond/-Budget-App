@@ -56,6 +56,7 @@ export async function GET(
       if (parseFloat(r.actualAmount.toString()) !== 0) return false;
       if (r.category.name === "Home") return true;
       if (r.category.name === "Shannon Bills" && r.label !== "Checking Account Hold") return true;
+      if (r.category.name === "Commute" && r.label === "Model 3 Payment") return true;
       return false;
     });
     if (rowsToFill.length > 0) {

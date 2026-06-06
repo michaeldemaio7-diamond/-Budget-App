@@ -157,7 +157,8 @@ async function main() {
     for (const row of cat.rows) {
       const prefill =
         isHome ||
-        (isShannonBills && row.label !== "Checking Account Hold");
+        (isShannonBills && row.label !== "Checking Account Hold") ||
+        (cat.name === "Commute" && row.label === "Model 3 Payment");
       await prisma.budgetRow.create({
         data: {
           budgetMonthId: june2026.id,
