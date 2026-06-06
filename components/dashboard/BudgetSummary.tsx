@@ -14,6 +14,7 @@ interface BudgetSummaryProps {
 }
 
 interface GroupedSection {
+  categoryId: number;
   name: string;
   icon?: string | null;
   sortOrder: number;
@@ -28,6 +29,7 @@ function groupBySection(rows: BudgetRowWithCategory[]): GroupedSection[] {
     const cat = row.category;
     if (!map.has(cat.id)) {
       map.set(cat.id, {
+        categoryId: cat.id,
         name: cat.name,
         icon: cat.icon,
         sortOrder: cat.sortOrder,
@@ -86,7 +88,7 @@ function EditableCell({
 
   if (editing) {
     return (
-      <div className="flex items-center justify-end gap-1">
+      <div className="flex items-center justify-center gap-1">
         <span className="text-slate-400 text-xs">$</span>
         <input
           type="number"
@@ -97,7 +99,7 @@ function EditableCell({
           onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setEditing(false); }}
           onBlur={save}
           autoFocus
-          className="w-24 text-right border border-blue-400 rounded px-1.5 py-0.5 text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
+          className="w-20 text-center border border-blue-400 rounded px-1.5 py-0.5 text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
         />
         {saving && <span className="text-xs text-slate-400">...</span>}
       </div>
@@ -108,7 +110,7 @@ function EditableCell({
     <button
       onClick={() => { setValue(initialValue.toFixed(2)); setEditing(true); }}
       className={clsx(
-        "text-sm text-right hover:underline decoration-dashed underline-offset-2 cursor-text group block w-full",
+        "text-sm text-center hover:underline decoration-dashed underline-offset-2 cursor-text group block w-full",
         dimmed ? "text-slate-500 hover:text-slate-700" : "text-slate-700 hover:text-blue-600"
       )}
       title="Click to edit"
@@ -119,9 +121,123 @@ function EditableCell({
   );
 }
 
+function AddMiscRow({
+  categoryId,
+  budgetMonthId,
+  onAdded,
+}: {
+  categoryId: number;
+  budgetMonthId: number;
+  onAdded: () => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const [label, setLabel] = useState("");
+  const [budget, setBudget] = useState("");
+  const [actual, setActual] = useState("");
+  const [saving, setSaving] = useState(false);
+
+  const save = async () => {
+    if (!label.trim()) return;
+    setSaving(true);
+    await fetch("/api/budget-rows", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        budgetMonthId,
+        categoryId,
+        label: label.trim(),
+        budgetAmount: parseFloat(budget) || 0,
+        actualAmount: parseFloat(actual) || 0,
+        isFixed: false,
+      }),
+    });
+    setSaving(false);
+    setLabel("");
+    setBudget("");
+    setActual("");
+    setOpen(false);
+    onAdded();
+  };
+
+  if (!open) {
+    return (
+      <tr className="border-t border-dashed border-slate-200">
+        <td colSpan={5} className="px-5 py-1.5 pl-8">
+          <button
+            onClick={() => setOpen(true)}
+            className="text-xs text-blue-500 hover:text-blue-700 flex items-center gap-1"
+          >
+            <span className="text-base leading-none">+</span> Add expense
+          </button>
+        </td>
+      </tr>
+    );
+  }
+
+  return (
+    <tr className="border-t border-dashed border-blue-200 bg-blue-50/40">
+      <td className="px-5 py-2 pl-8">
+        <input
+          autoFocus
+          type="text"
+          placeholder="Label"
+          value={label}
+          onChange={(e) => setLabel(e.target.value)}
+          onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setOpen(false); }}
+          className="border border-slate-300 rounded px-2 py-1 text-sm w-36 focus:outline-none focus:ring-1 focus:ring-blue-400"
+        />
+      </td>
+      <td className="px-4 py-2 text-center">
+        <input
+          type="number"
+          step="0.01"
+          min="0"
+          placeholder="0.00"
+          value={budget}
+          onChange={(e) => setBudget(e.target.value)}
+          onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setOpen(false); }}
+          className="border border-slate-300 rounded px-2 py-1 text-sm w-24 text-center focus:outline-none focus:ring-1 focus:ring-blue-400"
+        />
+      </td>
+      <td className="px-4 py-2 text-center">
+        <input
+          type="number"
+          step="0.01"
+          min="0"
+          placeholder="0.00"
+          value={actual}
+          onChange={(e) => setActual(e.target.value)}
+          onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setOpen(false); }}
+          className="border border-slate-300 rounded px-2 py-1 text-sm w-24 text-center focus:outline-none focus:ring-1 focus:ring-blue-400"
+        />
+      </td>
+      <td colSpan={2} className="px-4 py-2">
+        <div className="flex gap-2">
+          <button
+            onClick={save}
+            disabled={saving || !label.trim()}
+            className="bg-blue-600 text-white px-2.5 py-1 rounded text-xs hover:bg-blue-700 disabled:opacity-50"
+          >
+            {saving ? "..." : "Add"}
+          </button>
+          <button
+            onClick={() => { setOpen(false); setLabel(""); setBudget(""); setActual(""); }}
+            className="bg-slate-200 text-slate-700 px-2.5 py-1 rounded text-xs"
+          >
+            Cancel
+          </button>
+        </div>
+      </td>
+    </tr>
+  );
+}
+
 export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: BudgetSummaryProps) {
   const sections = groupBySection(rows);
   const monthYear = toMonthYearString(month, year);
+
+  // Need budgetMonthId for adding rows — grab from first row
+  const budgetMonthId = rows[0]?.budgetMonthId ?? 0;
 
   const grandBudget = sections.reduce((s, c) => s + c.totalBudget, 0);
   const grandActual = sections.reduce((s, c) => s + c.totalActual, 0);
@@ -141,9 +257,9 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
           <thead className="bg-slate-50 text-xs text-slate-500 uppercase tracking-wide">
             <tr>
               <th className="px-5 py-3 text-left">Item</th>
-              <th className="px-4 py-3 text-right">Budgeted</th>
-              <th className="px-4 py-3 text-right">Actual</th>
-              <th className="px-4 py-3 text-right">Remaining</th>
+              <th className="px-4 py-3 text-center">Budgeted</th>
+              <th className="px-4 py-3 text-center">Actual</th>
+              <th className="px-4 py-3 text-center">Remaining</th>
               <th className="px-3 py-3 text-center w-20">Fixed</th>
             </tr>
           </thead>
@@ -152,6 +268,7 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
               const sectionRemaining = section.totalBudget - section.totalActual;
               const sectionPct = section.totalBudget > 0 ? (section.totalActual / section.totalBudget) * 100 : 0;
               const sectionColors = statusColor(section.totalBudget, section.totalActual);
+              const isMisc = section.name.toLowerCase().includes("misc");
 
               return (
                 <>
@@ -169,7 +286,6 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
                             {sectionRemaining >= 0 ? "Left: " : "Over: "}
                             {formatCurrency(Math.abs(sectionRemaining))}
                           </span>
-                          {/* mini progress bar */}
                           <div className="hidden sm:flex w-16 bg-slate-200 rounded-full h-1.5 overflow-hidden">
                             <div
                               className={clsx("h-full rounded-full", sectionColors.bar)}
@@ -191,17 +307,17 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
                     return (
                       <tr key={row.id} className="border-t border-slate-50 hover:bg-slate-50/60">
                         <td className="px-5 py-2.5 pl-8 text-slate-600">{row.label}</td>
-                        <td className="px-4 py-2.5 text-right">
+                        <td className="px-4 py-2.5 text-center">
                           {row.isFixed ? (
                             <span className="text-slate-500">{formatCurrency(budget)}</span>
                           ) : (
                             <EditableCell value={budget} field="budgetAmount" rowId={row.id} onSaved={onBudgetUpdate ?? (() => {})} dimmed />
                           )}
                         </td>
-                        <td className="px-4 py-2.5 text-right">
+                        <td className="px-4 py-2.5 text-center">
                           <EditableCell value={actual} field="actualAmount" rowId={row.id} onSaved={onBudgetUpdate ?? (() => {})} />
                         </td>
-                        <td className={clsx("px-4 py-2.5 text-right font-medium", colors.text)}>
+                        <td className={clsx("px-4 py-2.5 text-center font-medium", colors.text)}>
                           {remaining >= 0 ? formatCurrency(remaining) : `-${formatCurrency(Math.abs(remaining))}`}
                         </td>
                         <td className="px-3 py-2.5 text-center">
@@ -214,6 +330,15 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
                       </tr>
                     );
                   })}
+
+                  {/* Add row button for Miscellaneous */}
+                  {isMisc && budgetMonthId > 0 && (
+                    <AddMiscRow
+                      categoryId={section.categoryId}
+                      budgetMonthId={budgetMonthId}
+                      onAdded={onBudgetUpdate ?? (() => {})}
+                    />
+                  )}
                 </>
               );
             })}
@@ -221,9 +346,9 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
           <tfoot>
             <tr className="bg-slate-50 font-semibold border-t-2 border-slate-200">
               <td className="px-5 py-3 text-slate-800">Total</td>
-              <td className="px-4 py-3 text-right text-slate-800">{formatCurrency(grandBudget)}</td>
-              <td className="px-4 py-3 text-right text-slate-800">{formatCurrency(grandActual)}</td>
-              <td className={clsx("px-4 py-3 text-right font-semibold", grandRemaining >= 0 ? "text-green-600" : "text-red-500")}>
+              <td className="px-4 py-3 text-center text-slate-800">{formatCurrency(grandBudget)}</td>
+              <td className="px-4 py-3 text-center text-slate-800">{formatCurrency(grandActual)}</td>
+              <td className={clsx("px-4 py-3 text-center font-semibold", grandRemaining >= 0 ? "text-green-600" : "text-red-500")}>
                 {grandRemaining >= 0 ? formatCurrency(grandRemaining) : `-${formatCurrency(Math.abs(grandRemaining))}`}
               </td>
               <td />

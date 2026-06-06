@@ -21,7 +21,7 @@ const categories = [
       { label: "Water",        budgetAmount: 70,   isFixed: true  },
       { label: "Garbage",      budgetAmount: 60,   isFixed: true  },
       { label: "PGE",          budgetAmount: 200,  isFixed: false },
-      { label: "Pest Control", budgetAmount: 100,  isFixed: true  },
+      { label: "Pest Control", budgetAmount: 70,   isFixed: true  },
     ],
   },
   {
@@ -59,12 +59,13 @@ const categories = [
     icon: "💳",
     sortOrder: 45,
     rows: [
-      { label: "Timeshare",            budgetAmount: 100, isFixed: true },
+      { label: "Timeshare",            budgetAmount: 200, isFixed: true },
       { label: "Youtube",              budgetAmount: 20,  isFixed: true },
       { label: "Tithe",                budgetAmount: 200, isFixed: true },
       { label: "Wax",                  budgetAmount: 85,  isFixed: true },
       { label: "Netflix",              budgetAmount: 20,  isFixed: true },
       { label: "Checking Account Hold",budgetAmount: 300, isFixed: true },
+      { label: "Crunch Fitness",       budgetAmount: 85,  isFixed: true },
     ],
   },
   {

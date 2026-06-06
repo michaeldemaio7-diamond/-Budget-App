@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { budgetMonthId, categoryId, label, budgetAmount, notes, alertThreshold } = body;
+    const { budgetMonthId, categoryId, label, budgetAmount, actualAmount, isFixed, notes, alertThreshold } = body;
 
     if (!budgetMonthId || !categoryId || !label) {
       return NextResponse.json(
@@ -45,7 +45,8 @@ export async function POST(req: NextRequest) {
         categoryId,
         label,
         budgetAmount: new Decimal(budgetAmount || 0),
-        actualAmount: new Decimal(0),
+        actualAmount: new Decimal(actualAmount || 0),
+        isFixed: isFixed ?? false,
         notes: notes || null,
         alertThreshold: new Decimal(alertThreshold || 90),
       },
