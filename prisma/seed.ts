@@ -16,7 +16,6 @@ const categories = [
       { label: "Hair",         budgetAmount: 60,   isFixed: true  },
       { label: "Cleaner",      budgetAmount: 300,  isFixed: true  },
       { label: "Security",     budgetAmount: 150,  isFixed: true  },
-      { label: "Insurance",    budgetAmount: 150,  isFixed: false },
       { label: "HOA",          budgetAmount: 140,  isFixed: false },
       { label: "Water",        budgetAmount: 70,   isFixed: true  },
       { label: "Garbage",      budgetAmount: 60,   isFixed: true  },
