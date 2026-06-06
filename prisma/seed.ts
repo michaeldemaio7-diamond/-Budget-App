@@ -51,7 +51,20 @@ const categories = [
       { label: "Gym",           budgetAmount: 190,  isFixed: false },
       { label: "Life Insurance",budgetAmount: 150,  isFixed: true  },
       { label: "Kai Rent",      budgetAmount: 550,  isFixed: false },
-      { label: "Kai Credit Card",budgetAmount: 450, isFixed: false },
+      { label: "Kai Credit Card",    budgetAmount: 700, isFixed: false },
+    ],
+  },
+  {
+    name: "Shannon Bills",
+    icon: "💳",
+    sortOrder: 45,
+    rows: [
+      { label: "Timeshare",            budgetAmount: 100, isFixed: true },
+      { label: "Youtube",              budgetAmount: 20,  isFixed: true },
+      { label: "Tithe",                budgetAmount: 200, isFixed: true },
+      { label: "Wax",                  budgetAmount: 85,  isFixed: true },
+      { label: "Netflix",              budgetAmount: 20,  isFixed: true },
+      { label: "Checking Account Hold",budgetAmount: 300, isFixed: true },
     ],
   },
   {
@@ -138,6 +151,7 @@ async function main() {
     const dbCat = dbCategories.find((c) => c.name === cat.name);
     if (!dbCat) continue;
 
+    const isHome = cat.name === "Home";
     for (const row of cat.rows) {
       await prisma.budgetRow.create({
         data: {
@@ -145,7 +159,7 @@ async function main() {
           categoryId: dbCat.id,
           label: row.label,
           budgetAmount: new Decimal(row.budgetAmount),
-          actualAmount: new Decimal(0),
+          actualAmount: new Decimal(isHome ? row.budgetAmount : 0),
           isFixed: row.isFixed,
         },
       });

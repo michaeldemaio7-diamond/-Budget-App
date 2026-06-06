@@ -55,15 +55,17 @@ export async function POST(req: NextRequest) {
     });
 
     if (prevMonth && prevMonth.budgetRows.length > 0) {
-      // Copy rows from previous month
+      // Copy rows from previous month; pre-fill actuals for Home category
+      const homeCategory = categories.find((c) => c.name === "Home");
       for (const row of prevMonth.budgetRows) {
+        const prefill = homeCategory && row.categoryId === homeCategory.id;
         await prisma.budgetRow.create({
           data: {
             budgetMonthId: budgetMonth.id,
             categoryId: row.categoryId,
             label: row.label,
             budgetAmount: row.budgetAmount,
-            actualAmount: new Decimal(0),
+            actualAmount: prefill ? row.budgetAmount : new Decimal(0),
             notes: row.notes,
             alertThreshold: row.alertThreshold,
           },

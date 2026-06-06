@@ -49,6 +49,27 @@ export async function GET(
       prisma.settings.findUnique({ where: { id: 1 } }),
     ]);
 
+    // Auto-fill actualAmount=budgetAmount for Home rows where actual is still 0
+    // (preserves non-zero actuals for current month; fills all for future months since they start at 0)
+    const homeRowsToFill = budgetRows.filter(
+      (r) => r.category.name === "Home" && parseFloat(r.actualAmount.toString()) === 0
+    );
+    if (homeRowsToFill.length > 0) {
+      await Promise.all(
+        homeRowsToFill.map((r) =>
+          prisma.budgetRow.update({
+            where: { id: r.id },
+            data: { actualAmount: r.budgetAmount },
+          })
+        )
+      );
+      budgetRows.forEach((r) => {
+        if (homeRowsToFill.some((h) => h.id === r.id)) {
+          r.actualAmount = r.budgetAmount;
+        }
+      });
+    }
+
     return NextResponse.json({
       budgetMonth,
       incomes,
