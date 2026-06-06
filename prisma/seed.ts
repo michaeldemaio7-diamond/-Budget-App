@@ -207,6 +207,17 @@ async function main() {
     },
   });
 
+  // Seed Goals
+  await prisma.goal.deleteMany({});
+  const goals = [
+    { sortOrder: 1, name: "New Car",   description: "New car for Shannon",    costNeeded: 20000  },
+    { sortOrder: 2, name: "Surgery",   description: "Eyes and boobs",         costNeeded: 15000  },
+    { sortOrder: 3, name: "New Home",  description: "New home in Walnut Creek",costNeeded: 150000 },
+  ];
+  for (const g of goals) {
+    await prisma.goal.create({ data: { ...g, achieved: false } });
+  }
+
   // Seed MonthlySavings rows: Jun 2026 – Dec 2027
   const savingsMonths: { month: number; year: number }[] = [];
   for (let m = 6; m <= 12; m++) savingsMonths.push({ month: m, year: 2026 });

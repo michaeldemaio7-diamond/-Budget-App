@@ -30,6 +30,12 @@ export async function PATCH(req: NextRequest) {
       },
     });
 
+    // Re-evaluate goals whenever cumulative savings changes
+    if (cumulativeSavings !== undefined) {
+      const { checkGoalsAfterSavingsUpdate } = await import("@/lib/checkGoals");
+      await checkGoalsAfterSavingsUpdate();
+    }
+
     return NextResponse.json(row);
   } catch (error) {
     console.error("PATCH /api/savings error:", error);
