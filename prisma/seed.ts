@@ -153,14 +153,18 @@ async function main() {
     if (!dbCat) continue;
 
     const isHome = cat.name === "Home";
+    const isShannonBills = cat.name === "Shannon Bills";
     for (const row of cat.rows) {
+      const prefill =
+        isHome ||
+        (isShannonBills && row.label !== "Checking Account Hold");
       await prisma.budgetRow.create({
         data: {
           budgetMonthId: june2026.id,
           categoryId: dbCat.id,
           label: row.label,
           budgetAmount: new Decimal(row.budgetAmount),
-          actualAmount: new Decimal(isHome ? row.budgetAmount : 0),
+          actualAmount: new Decimal(prefill ? row.budgetAmount : 0),
           isFixed: row.isFixed,
         },
       });

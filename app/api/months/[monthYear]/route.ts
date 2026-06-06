@@ -49,14 +49,18 @@ export async function GET(
       prisma.settings.findUnique({ where: { id: 1 } }),
     ]);
 
-    // Auto-fill actualAmount=budgetAmount for Home rows where actual is still 0
-    // (preserves non-zero actuals for current month; fills all for future months since they start at 0)
-    const homeRowsToFill = budgetRows.filter(
-      (r) => r.category.name === "Home" && parseFloat(r.actualAmount.toString()) === 0
-    );
-    if (homeRowsToFill.length > 0) {
+    // Auto-fill actualAmount=budgetAmount where actual is still 0:
+    // - Home: all rows
+    // - Shannon Bills: all rows except "Checking Account Hold"
+    const rowsToFill = budgetRows.filter((r) => {
+      if (parseFloat(r.actualAmount.toString()) !== 0) return false;
+      if (r.category.name === "Home") return true;
+      if (r.category.name === "Shannon Bills" && r.label !== "Checking Account Hold") return true;
+      return false;
+    });
+    if (rowsToFill.length > 0) {
       await Promise.all(
-        homeRowsToFill.map((r) =>
+        rowsToFill.map((r) =>
           prisma.budgetRow.update({
             where: { id: r.id },
             data: { actualAmount: r.budgetAmount },
@@ -64,7 +68,7 @@ export async function GET(
         )
       );
       budgetRows.forEach((r) => {
-        if (homeRowsToFill.some((h) => h.id === r.id)) {
+        if (rowsToFill.some((h) => h.id === r.id)) {
           r.actualAmount = r.budgetAmount;
         }
       });

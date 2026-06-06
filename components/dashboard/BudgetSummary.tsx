@@ -309,7 +309,7 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
                         <td className="px-5 py-2.5 pl-8 text-slate-600">{row.label}</td>
                         <td className="px-4 py-2.5 text-center">
                           {row.isFixed ? (
-                            <span className="text-slate-500">{formatCurrency(budget)}</span>
+                            <span className="text-slate-500 block w-full text-center">{formatCurrency(budget)}</span>
                           ) : (
                             <EditableCell value={budget} field="budgetAmount" rowId={row.id} onSaved={onBudgetUpdate ?? (() => {})} dimmed />
                           )}
