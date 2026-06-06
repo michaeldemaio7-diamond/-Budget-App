@@ -22,6 +22,7 @@ const categories = [
       { label: "Garbage",      budgetAmount: 60,   isFixed: true  },
       { label: "PGE",          budgetAmount: 200,  isFixed: false },
       { label: "Pest Control", budgetAmount: 70,   isFixed: true  },
+      { label: "Daycare",      budgetAmount: 1904, isFixed: false },
     ],
   },
   {
