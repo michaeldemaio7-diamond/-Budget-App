@@ -58,6 +58,7 @@ export async function GET(
       if (r.category.name === "Home") return true;
       if (r.category.name === "Shannon Bills" && r.label !== "Checking Account Hold") return true;
       if (r.category.name === "Commute" && r.label === "Model 3 Payment") return true;
+      if (r.category.name === "Wife" && r.label === "Kai Rent") return true;
       return false;
     });
     if (rowsToFill.length > 0) {
