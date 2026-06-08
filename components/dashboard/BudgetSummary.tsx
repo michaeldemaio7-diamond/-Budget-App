@@ -55,6 +55,59 @@ function statusColor(budget: number, actual: number) {
   return { bar: "bg-green-400", text: "text-green-600" };
 }
 
+function EditableLabel({
+  value: initialValue,
+  rowId,
+  onSaved,
+}: {
+  value: string;
+  rowId: number;
+  onSaved: () => void;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [value, setValue] = useState(initialValue);
+  const [saving, setSaving] = useState(false);
+
+  const save = async () => {
+    if (!value.trim()) { setEditing(false); return; }
+    setSaving(true);
+    await fetch(`/api/budget-rows`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id: rowId, label: value.trim() }),
+    });
+    setSaving(false);
+    setEditing(false);
+    onSaved();
+  };
+
+  if (editing) {
+    return (
+      <input
+        autoFocus
+        type="text"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setEditing(false); }}
+        onBlur={save}
+        className="border border-blue-400 rounded px-1.5 py-0.5 text-sm w-40 focus:outline-none focus:ring-1 focus:ring-blue-400"
+      />
+    );
+  }
+
+  return (
+    <button
+      onClick={() => { setValue(initialValue); setEditing(true); }}
+      className="text-sm text-left text-slate-600 hover:text-blue-600 cursor-text group"
+      title="Click to rename"
+    >
+      {initialValue}
+      <span className="ml-1 opacity-0 group-hover:opacity-100 text-xs text-blue-400">✏</span>
+      {saving && <span className="ml-1 text-xs text-slate-400">...</span>}
+    </button>
+  );
+}
+
 function EditableCell({
   value: initialValue,
   field,
@@ -306,7 +359,13 @@ export default function BudgetSummary({ rows, month, year, onBudgetUpdate }: Bud
 
                     return (
                       <tr key={row.id} className="border-t border-slate-50 hover:bg-slate-50/60">
-                        <td className="px-5 py-2.5 pl-8 text-slate-600">{row.label}</td>
+                        <td className="px-5 py-2.5 pl-8">
+                          {isMisc ? (
+                            <EditableLabel value={row.label} rowId={row.id} onSaved={onBudgetUpdate ?? (() => {})} />
+                          ) : (
+                            <span className="text-slate-600">{row.label}</span>
+                          )}
+                        </td>
                         <td className="px-4 py-2.5 text-center">
                           {row.isFixed ? (
                             <span className="text-slate-500 block w-full text-center">{formatCurrency(budget)}</span>

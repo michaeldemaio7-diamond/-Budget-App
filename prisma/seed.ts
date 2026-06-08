@@ -50,8 +50,8 @@ const categories = [
       { label: "Shannon",       budgetAmount: 200,  isFixed: true  },
       { label: "Gym",           budgetAmount: 190,  isFixed: false },
       { label: "Life Insurance",budgetAmount: 150,  isFixed: true  },
-      { label: "Kai Rent",      budgetAmount: 550,  isFixed: false },
-      { label: "Kai Credit Card",    budgetAmount: 700, isFixed: false },
+      { label: "Kai Rent",      budgetAmount: 575,  isFixed: false },
+      { label: "Kai Credit Card",    budgetAmount: 1000, isFixed: false },
     ],
   },
   {
