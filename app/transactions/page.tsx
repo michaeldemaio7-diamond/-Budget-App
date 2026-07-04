@@ -5,9 +5,14 @@ import { Transaction, BudgetRowWithCategory } from "@/types";
 import { formatCurrency, formatDate } from "@/lib/formatters";
 import CurrencyInput from "@/components/ui/CurrencyInput";
 
+const MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+interface BudgetMonth { id: number; month: number; year: number; }
+
 export default function TransactionsPage() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [allRows, setAllRows] = useState<BudgetRowWithCategory[]>([]);
+  const [allMonths, setAllMonths] = useState<BudgetMonth[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [filterSource, setFilterSource] = useState("");
@@ -26,6 +31,11 @@ export default function TransactionsPage() {
     date: now.toISOString().split("T")[0],
     budgetRowId: "",
   });
+
+  // Fetch all available budget months for the "Month Applied" dropdown
+  useEffect(() => {
+    fetch("/api/months").then(r => r.json()).then(setAllMonths).catch(() => {});
+  }, []);
 
   const fetchTransactions = useCallback(async () => {
     setLoading(true);
@@ -253,6 +263,7 @@ export default function TransactionsPage() {
                   <th className="px-4 py-3 text-left hidden md:table-cell">Description</th>
                   <th className="px-4 py-3 text-left">Category</th>
                   <th className="px-4 py-3 text-right">Amount</th>
+                  <th className="px-4 py-3 text-left hidden md:table-cell">Month Applied</th>
                   <th className="px-4 py-3 text-left hidden sm:table-cell">Source</th>
                   <th className="px-4 py-3 text-right">Actions</th>
                 </tr>
@@ -299,6 +310,34 @@ export default function TransactionsPage() {
                     </td>
                     <td className="px-4 py-3 text-sm text-right font-semibold text-slate-800">
                       {formatCurrency(typeof tx.amount === "string" ? parseFloat(tx.amount) : tx.amount)}
+                    </td>
+                    <td className="px-4 py-3 hidden md:table-cell">
+                      <select
+                        value={tx.budgetMonthId}
+                        onChange={async (e) => {
+                          const selectedMonth = allMonths.find(m => m.id === parseInt(e.target.value));
+                          if (!selectedMonth) return;
+                          setSaving(true);
+                          await fetch("/api/transactions/move", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                              transactionId: tx.id,
+                              month: selectedMonth.month,
+                              year: selectedMonth.year,
+                            }),
+                          });
+                          setSaving(false);
+                          fetchTransactions();
+                        }}
+                        className="border border-slate-200 rounded px-1.5 py-1 text-xs bg-white text-slate-700"
+                      >
+                        {allMonths.map((m) => (
+                          <option key={m.id} value={m.id}>
+                            {MONTH_NAMES[m.month - 1]} {m.year}
+                          </option>
+                        ))}
+                      </select>
                     </td>
                     <td className="px-4 py-3 hidden sm:table-cell">
                       <span className={`text-xs px-2 py-0.5 rounded-full ${tx.source === "CHASE_EMAIL" ? "bg-purple-100 text-purple-700" : "bg-slate-100 text-slate-600"}`}>
