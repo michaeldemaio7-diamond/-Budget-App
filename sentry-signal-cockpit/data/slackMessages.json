@@ -1,0 +1,2057 @@
+[
+  {
+    "channelId": "C1001LUME",
+    "accountId": "acc-001",
+    "messages": [
+      {
+        "author": "Liam Castellanos (Lumenpath Health)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Liam Castellanos (Lumenpath Health)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Liam Castellanos (Lumenpath Health)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Liam Castellanos (Lumenpath Health)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1002VERT",
+    "accountId": "acc-002",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Dev Beaumont (Vertex Grid)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Dev Beaumont (Vertex Grid)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Dev Beaumont (Vertex Grid)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Dev Beaumont (Vertex Grid)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1003QUIL",
+    "accountId": "acc-003",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Customer Engineer (Quillstack AI)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Customer Engineer (Quillstack AI)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Customer Engineer (Quillstack AI)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Customer Engineer (Quillstack AI)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1004HARB",
+    "accountId": "acc-004",
+    "messages": [
+      {
+        "author": "Felix Vance (Harborline Pay)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Felix Vance (Harborline Pay)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Felix Vance (Harborline Pay)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Felix Vance (Harborline Pay)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Felix Vance (Harborline Pay)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      }
+    ]
+  },
+  {
+    "channelId": "C1005NIMB",
+    "accountId": "acc-005",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Tara Duarte (Nimbus Games)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      }
+    ]
+  },
+  {
+    "channelId": "C1008PULS",
+    "accountId": "acc-008",
+    "messages": [
+      {
+        "author": "Ines Beaumont (Pulsewire Media)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Ines Beaumont (Pulsewire Media)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Ines Beaumont (Pulsewire Media)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Ines Beaumont (Pulsewire Media)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      }
+    ]
+  },
+  {
+    "channelId": "C1013TIDA",
+    "accountId": "acc-013",
+    "messages": [
+      {
+        "author": "Kai Castellanos (Tidal Logistics)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1014EMBE",
+    "accountId": "acc-014",
+    "messages": [
+      {
+        "author": "Clara Ferreira (Ember Logistics)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Clara Ferreira (Ember Logistics)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Clara Ferreira (Ember Logistics)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      }
+    ]
+  },
+  {
+    "channelId": "C1015FABL",
+    "accountId": "acc-015",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Ava Novak (Fable Grid)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Ava Novak (Fable Grid)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      }
+    ]
+  },
+  {
+    "channelId": "C1016DUNE",
+    "accountId": "acc-016",
+    "messages": [
+      {
+        "author": "Yuki Castellanos (Dune Health)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Yuki Castellanos (Dune Health)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Yuki Castellanos (Dune Health)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Yuki Castellanos (Dune Health)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Yuki Castellanos (Dune Health)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      }
+    ]
+  },
+  {
+    "channelId": "C1018FORG",
+    "accountId": "acc-018",
+    "messages": [
+      {
+        "author": "Silas Oyelaran (Forge Data)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Silas Oyelaran (Forge Data)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1019EMBE",
+    "accountId": "acc-019",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Sofia Novak (Ember Security)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Sofia Novak (Ember Security)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Sofia Novak (Ember Security)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Sofia Novak (Ember Security)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      }
+    ]
+  },
+  {
+    "channelId": "C1024BEAC",
+    "accountId": "acc-024",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Customer Engineer (Beacon Health)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1025VERT",
+    "accountId": "acc-025",
+    "messages": [
+      {
+        "author": "Customer Engineer (Vertex Retail)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Customer Engineer (Vertex Retail)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Customer Engineer (Vertex Retail)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Customer Engineer (Vertex Retail)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Customer Engineer (Vertex Retail)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Customer Engineer (Vertex Retail)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1027GROV",
+    "accountId": "acc-027",
+    "messages": [
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Customer Engineer (Grove Labs)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Customer Engineer (Grove Labs)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1028SABL",
+    "accountId": "acc-028",
+    "messages": [
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Clara Whitfield (Sable Energy)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Clara Whitfield (Sable Energy)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Clara Whitfield (Sable Energy)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1031GROV",
+    "accountId": "acc-031",
+    "messages": [
+      {
+        "author": "Clara Ekwueme (Grove Pay)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Clara Ekwueme (Grove Pay)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Clara Ekwueme (Grove Pay)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Clara Ekwueme (Grove Pay)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Clara Ekwueme (Grove Pay)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Clara Ekwueme (Grove Pay)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Clara Ekwueme (Grove Pay)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      }
+    ]
+  },
+  {
+    "channelId": "C1034EMBE",
+    "accountId": "acc-034",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Customer Engineer (Ember Retail)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Customer Engineer (Ember Retail)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Customer Engineer (Ember Retail)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      }
+    ]
+  },
+  {
+    "channelId": "C1035QUIL",
+    "accountId": "acc-035",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      }
+    ]
+  },
+  {
+    "channelId": "C1037CIND",
+    "accountId": "acc-037",
+    "messages": [
+      {
+        "author": "Customer Engineer (Cinder Labs)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Customer Engineer (Cinder Labs)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      }
+    ]
+  },
+  {
+    "channelId": "C1038TIDA",
+    "accountId": "acc-038",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Diego Kowalski (Tidal Bio)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Diego Kowalski (Tidal Bio)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Diego Kowalski (Tidal Bio)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Diego Kowalski (Tidal Bio)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Diego Kowalski (Tidal Bio)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Diego Kowalski (Tidal Bio)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      }
+    ]
+  },
+  {
+    "channelId": "C1039GLAC",
+    "accountId": "acc-039",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      }
+    ]
+  },
+  {
+    "channelId": "C1040EMBE",
+    "accountId": "acc-040",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Customer Engineer (Ember Grid)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Customer Engineer (Ember Grid)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Customer Engineer (Ember Grid)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      }
+    ]
+  },
+  {
+    "channelId": "C1041IRIS",
+    "accountId": "acc-041",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Silas Duarte (Iris Labs)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Silas Duarte (Iris Labs)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Silas Duarte (Iris Labs)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      }
+    ]
+  },
+  {
+    "channelId": "C1042ECHO",
+    "accountId": "acc-042",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Customer Engineer (Echo Systems)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Customer Engineer (Echo Systems)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Customer Engineer (Echo Systems)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1043VAUL",
+    "accountId": "acc-043",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Tara Kowalski (Vault AI)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Tara Kowalski (Vault AI)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Tara Kowalski (Vault AI)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      }
+    ]
+  },
+  {
+    "channelId": "C1045TIDA",
+    "accountId": "acc-045",
+    "messages": [
+      {
+        "author": "Freya Osei (Tidal Studio)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Freya Osei (Tidal Studio)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Freya Osei (Tidal Studio)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Freya Osei (Tidal Studio)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Freya Osei (Tidal Studio)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      }
+    ]
+  },
+  {
+    "channelId": "C1046LARC",
+    "accountId": "acc-046",
+    "messages": [
+      {
+        "author": "Customer Engineer (Larch Health)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Customer Engineer (Larch Health)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Customer Engineer (Larch Health)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      }
+    ]
+  },
+  {
+    "channelId": "C1048ORBI",
+    "accountId": "acc-048",
+    "messages": [
+      {
+        "author": "Customer Engineer (Orbit Mobility)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Customer Engineer (Orbit Mobility)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Customer Engineer (Orbit Mobility)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      }
+    ]
+  },
+  {
+    "channelId": "C1051GROV",
+    "accountId": "acc-051",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Ida Ashford (Grove Commerce)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Ida Ashford (Grove Commerce)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Ida Ashford (Grove Commerce)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      }
+    ]
+  },
+  {
+    "channelId": "C1052THIS",
+    "accountId": "acc-052",
+    "messages": [
+      {
+        "author": "Marco Duarte (Thistle Pay)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Marco Duarte (Thistle Pay)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1054KEST",
+    "accountId": "acc-054",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Noah Whitfield (Kestrel Networks)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Noah Whitfield (Kestrel Networks)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Noah Whitfield (Kestrel Networks)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Noah Whitfield (Kestrel Networks)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      }
+    ]
+  },
+  {
+    "channelId": "C1055GROV",
+    "accountId": "acc-055",
+    "messages": [
+      {
+        "author": "Customer Engineer (Grove Retail)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Customer Engineer (Grove Retail)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Customer Engineer (Grove Retail)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Customer Engineer (Grove Retail)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1056ONYX",
+    "accountId": "acc-056",
+    "messages": [
+      {
+        "author": "Ines Nakagawa (Onyx Grid)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Ines Nakagawa (Onyx Grid)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1058MERI",
+    "accountId": "acc-058",
+    "messages": [
+      {
+        "author": "Customer Engineer (Meridian Finance)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Customer Engineer (Meridian Finance)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Customer Engineer (Meridian Finance)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Customer Engineer (Meridian Finance)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      }
+    ]
+  },
+  {
+    "channelId": "C1059COPP",
+    "accountId": "acc-059",
+    "messages": [
+      {
+        "author": "Customer Engineer (Copper Works)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Customer Engineer (Copper Works)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Customer Engineer (Copper Works)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Customer Engineer (Copper Works)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Customer Engineer (Copper Works)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1062COBA",
+    "accountId": "acc-062",
+    "messages": [
+      {
+        "author": "Lena Duarte (Cobalt AI)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Lena Duarte (Cobalt AI)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Lena Duarte (Cobalt AI)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      }
+    ]
+  },
+  {
+    "channelId": "C1063BASA",
+    "accountId": "acc-063",
+    "messages": [
+      {
+        "author": "Customer Engineer (Basalt Cloud)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Customer Engineer (Basalt Cloud)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Customer Engineer (Basalt Cloud)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Customer Engineer (Basalt Cloud)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      }
+    ]
+  },
+  {
+    "channelId": "C1069CIND",
+    "accountId": "acc-069",
+    "messages": [
+      {
+        "author": "Mia Ashford (Cinder Networks)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Mia Ashford (Cinder Networks)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Mia Ashford (Cinder Networks)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Mia Ashford (Cinder Networks)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Mia Ashford (Cinder Networks)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      }
+    ]
+  },
+  {
+    "channelId": "C1070NORT",
+    "accountId": "acc-070",
+    "messages": [
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Aiden Osei (Northwind Health)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Aiden Osei (Northwind Health)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Aiden Osei (Northwind Health)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Aiden Osei (Northwind Health)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      }
+    ]
+  },
+  {
+    "channelId": "C1072SUMM",
+    "accountId": "acc-072",
+    "messages": [
+      {
+        "author": "Dev Whitfield (Summit Commerce)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Dev Whitfield (Summit Commerce)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Dev Whitfield (Summit Commerce)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Dev Whitfield (Summit Commerce)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Dev Whitfield (Summit Commerce)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      }
+    ]
+  },
+  {
+    "channelId": "C1077NIMB",
+    "accountId": "acc-077",
+    "messages": [
+      {
+        "author": "Diego Petrov (Nimbus Commerce)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Diego Petrov (Nimbus Commerce)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      }
+    ]
+  },
+  {
+    "channelId": "C1081VERT",
+    "accountId": "acc-081",
+    "messages": [
+      {
+        "author": "Silas Calloway (Vertex Commerce)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Silas Calloway (Vertex Commerce)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Silas Calloway (Vertex Commerce)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Silas Calloway (Vertex Commerce)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      }
+    ]
+  },
+  {
+    "channelId": "C1082ONYX",
+    "accountId": "acc-082",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Marco Osei (Onyx Bio)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1084VAUL",
+    "accountId": "acc-084",
+    "messages": [
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Customer Engineer (Vault Pay)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Customer Engineer (Vault Pay)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1085FABL",
+    "accountId": "acc-085",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Customer Engineer (Fable Labs)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Customer Engineer (Fable Labs)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      }
+    ]
+  },
+  {
+    "channelId": "C1086PINN",
+    "accountId": "acc-086",
+    "messages": [
+      {
+        "author": "Customer Engineer (Pinnacle Mobility)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Customer Engineer (Pinnacle Mobility)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Customer Engineer (Pinnacle Mobility)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      }
+    ]
+  },
+  {
+    "channelId": "C1087HARB",
+    "accountId": "acc-087",
+    "messages": [
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Customer Engineer (Harbor Energy)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1088NORT",
+    "accountId": "acc-088",
+    "messages": [
+      {
+        "author": "Marco Vance (Northwind Analytics)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Marco Vance (Northwind Analytics)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      },
+      {
+        "author": "Marco Vance (Northwind Analytics)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      }
+    ]
+  },
+  {
+    "channelId": "C1089HARB",
+    "accountId": "acc-089",
+    "messages": [
+      {
+        "author": "Customer Engineer (Harbor Analytics)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Thanks for the quick turnaround on the quota question 🙏"
+      },
+      {
+        "author": "Customer Engineer (Harbor Analytics)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Customer Engineer (Harbor Analytics)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Flagging: support case just got bumped to P1, looping CSM."
+      }
+    ]
+  },
+  {
+    "channelId": "C1094NIMB",
+    "accountId": "acc-094",
+    "messages": [
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Zoe Ashford (Nimbus Media)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Zoe Ashford (Nimbus Media)",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1095DUNE",
+    "accountId": "acc-095",
+    "messages": [
+      {
+        "author": "Noah Takeda (Dune Works)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Noah Takeda (Dune Works)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Noah Takeda (Dune Works)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Noah Takeda (Dune Works)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Noah Takeda (Dune Works)",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      },
+      {
+        "author": "Noah Takeda (Dune Works)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Our platform team wants to see the span sampling config before we scale it up."
+      },
+      {
+        "author": "Noah Takeda (Dune Works)",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      }
+    ]
+  },
+  {
+    "channelId": "C1096HELI",
+    "accountId": "acc-096",
+    "messages": [
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      },
+      {
+        "author": "Felix Ashford (Helix Systems)",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "text": "The dashboard the SE built is exactly what our VP asked for."
+      },
+      {
+        "author": "Felix Ashford (Helix Systems)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Felix Ashford (Helix Systems)",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "text": "Still seeing the symbolication issue on the latest release build."
+      },
+      {
+        "author": "Felix Ashford (Helix Systems)",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "text": "We got budget sign-off for the expansion 🎉, procurement is next."
+      }
+    ]
+  },
+  {
+    "channelId": "C1098PULS",
+    "accountId": "acc-098",
+    "messages": [
+      {
+        "author": "Customer Engineer (Pulse Networks)",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Sasha Bloom (SE)",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "text": "Usage rollup from this morning attached, spans trending +9% WoW."
+      }
+    ]
+  },
+  {
+    "channelId": "C1100COBA",
+    "accountId": "acc-100",
+    "messages": [
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "text": "Shared the POC success criteria doc — link in Notion."
+      },
+      {
+        "author": "Priya Natarajan (CSM)",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "text": "Recap posted after the discovery call — MEDDPIC gaps noted."
+      },
+      {
+        "author": "Elsa Nakagawa (Cobalt Studio)",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      },
+      {
+        "author": "Elsa Nakagawa (Cobalt Studio)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Who owns the security questionnaire on your side?"
+      },
+      {
+        "author": "Jordan Reyes (AE)",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "text": "Booked the exec sync for Thursday, invite sent."
+      },
+      {
+        "author": "Elsa Nakagawa (Cobalt Studio)",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "text": "Heads up — big launch on our side next Tuesday, expect traffic spike."
+      },
+      {
+        "author": "Elsa Nakagawa (Cobalt Studio)",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "text": "Can we get 30 min this week to walk through the readout?"
+      }
+    ]
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "CS-1042",
+    "accountId": "acc-004",
+    "subject": "Checkout instrumentation dropping spans",
+    "priority": "P1",
+    "daysPastSla": 4,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1055",
+    "accountId": "acc-001",
+    "subject": "SDK symbolication failing on release builds",
+    "priority": "P2",
+    "daysPastSla": 2,
+    "escalationOwner": "T2 — Runtime",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1058",
+    "accountId": "acc-001",
+    "subject": "Quota alert emails not arriving",
+    "priority": "P3",
+    "daysPastSla": 0,
+    "escalationOwner": "T1 Queue",
+    "status": "Open"
+  },
+  {
+    "id": "CS-1049",
+    "accountId": "acc-002",
+    "subject": "Rate-limit 429s during deploy spikes",
+    "priority": "P2",
+    "daysPastSla": 1,
+    "escalationOwner": "T2 — Ingest",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1063",
+    "accountId": "acc-006",
+    "subject": "Replay recordings missing network tab",
+    "priority": "P4",
+    "daysPastSla": 0,
+    "escalationOwner": "T2 — Runtime",
+    "status": "Open"
+  },
+  {
+    "id": "CS-1064",
+    "accountId": "acc-007",
+    "subject": "Quota alert emails not arriving",
+    "priority": "P1",
+    "daysPastSla": 4,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1066",
+    "accountId": "acc-011",
+    "subject": "SDK symbolication failing on release builds",
+    "priority": "P3",
+    "daysPastSla": 0,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Open"
+  },
+  {
+    "id": "CS-1068",
+    "accountId": "acc-013",
+    "subject": "Checkout instrumentation dropping spans",
+    "priority": "P1",
+    "daysPastSla": 2,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1071",
+    "accountId": "acc-014",
+    "subject": "Webhook deliveries delayed >10min",
+    "priority": "P1",
+    "daysPastSla": 4,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1075",
+    "accountId": "acc-015",
+    "subject": "Webhook deliveries delayed >10min",
+    "priority": "P4",
+    "daysPastSla": 0,
+    "escalationOwner": "T1 Queue",
+    "status": "Open"
+  },
+  {
+    "id": "CS-1077",
+    "accountId": "acc-017",
+    "subject": "Source maps upload intermittently 502s",
+    "priority": "P2",
+    "daysPastSla": 1,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1081",
+    "accountId": "acc-020",
+    "subject": "Source maps upload intermittently 502s",
+    "priority": "P3",
+    "daysPastSla": 0,
+    "escalationOwner": "T1 Queue",
+    "status": "Open"
+  },
+  {
+    "id": "CS-1084",
+    "accountId": "acc-021",
+    "subject": "SDK symbolication failing on release builds",
+    "priority": "P2",
+    "daysPastSla": 1,
+    "escalationOwner": "T2 — Runtime",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1085",
+    "accountId": "acc-024",
+    "subject": "Checkout instrumentation dropping spans",
+    "priority": "P4",
+    "daysPastSla": 0,
+    "escalationOwner": "T2 — Runtime",
+    "status": "Open"
+  },
+  {
+    "id": "CS-1089",
+    "accountId": "acc-025",
+    "subject": "Checkout instrumentation dropping spans",
+    "priority": "P3",
+    "daysPastSla": 0,
+    "escalationOwner": "T2 — Ingest",
+    "status": "Open"
+  },
+  {
+    "id": "CS-1090",
+    "accountId": "acc-026",
+    "subject": "Cron monitor false-positive alerts",
+    "priority": "P3",
+    "daysPastSla": 0,
+    "escalationOwner": "T2 — Ingest",
+    "status": "Open"
+  },
+  {
+    "id": "CS-1094",
+    "accountId": "acc-028",
+    "subject": "Checkout instrumentation dropping spans",
+    "priority": "P2",
+    "daysPastSla": 1,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1096",
+    "accountId": "acc-030",
+    "subject": "Cron monitor false-positive alerts",
+    "priority": "P1",
+    "daysPastSla": 2,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1099",
+    "accountId": "acc-032",
+    "subject": "SDK symbolication failing on release builds",
+    "priority": "P3",
+    "daysPastSla": 0,
+    "escalationOwner": "T1 Queue",
+    "status": "Pending Customer"
+  },
+  {
+    "id": "CS-1100",
+    "accountId": "acc-033",
+    "subject": "Dashboard widget timeout on large orgs",
+    "priority": "P2",
+    "daysPastSla": 2,
+    "escalationOwner": "Exec Escalation — VP Support",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1102",
+    "accountId": "acc-034",
+    "subject": "Dashboard widget timeout on large orgs",
+    "priority": "P2",
+    "daysPastSla": 1,
+    "escalationOwner": "T2 — Ingest",
+    "status": "Escalated"
+  },
+  {
+    "id": "CS-1103",
+    "accountId": "acc-038",
+    "subject": "Quota alert emails not arriving",
+    "priority": "P2",
+    "daysPastSla": 2,
+    "escalationOwner": "T1 Queue",
+    "status": "Escalated"
+  }
+]
