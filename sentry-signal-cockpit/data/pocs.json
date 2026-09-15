@@ -1,0 +1,114 @@
+[
+  {
+    "id": "poc-001",
+    "accountId": "acc-002",
+    "opportunityId": "opp-002",
+    "stage": "1",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-002-success-criteria"
+  },
+  {
+    "id": "poc-002",
+    "accountId": "acc-004",
+    "opportunityId": "opp-003",
+    "stage": "Validation",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-003-success-criteria"
+  },
+  {
+    "id": "poc-003",
+    "accountId": "acc-005",
+    "opportunityId": "opp-005",
+    "stage": "Validation",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-005-success-criteria"
+  },
+  {
+    "id": "poc-004",
+    "accountId": "acc-008",
+    "opportunityId": "opp-006",
+    "stage": "POC",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-006-success-criteria"
+  },
+  {
+    "id": "poc-005",
+    "accountId": "acc-012",
+    "opportunityId": "opp-008",
+    "stage": "2",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-008-success-criteria"
+  },
+  {
+    "id": "poc-006",
+    "accountId": "acc-017",
+    "opportunityId": "opp-011",
+    "stage": "2",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-011-success-criteria"
+  },
+  {
+    "id": "poc-007",
+    "accountId": "acc-018",
+    "opportunityId": "opp-012",
+    "stage": "POC",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-012-success-criteria"
+  },
+  {
+    "id": "poc-008",
+    "accountId": "acc-023",
+    "opportunityId": "opp-013",
+    "stage": "0",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-013-success-criteria"
+  },
+  {
+    "id": "poc-009",
+    "accountId": "acc-024",
+    "opportunityId": "opp-014",
+    "stage": "1",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-014-success-criteria"
+  },
+  {
+    "id": "poc-010",
+    "accountId": "acc-031",
+    "opportunityId": "opp-016",
+    "stage": "POC",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-016-success-criteria"
+  },
+  {
+    "id": "poc-011",
+    "accountId": "acc-035",
+    "opportunityId": "opp-017",
+    "stage": "POC",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-017-success-criteria"
+  },
+  {
+    "id": "poc-012",
+    "accountId": "acc-037",
+    "opportunityId": "opp-019",
+    "stage": "2",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-019-success-criteria"
+  },
+  {
+    "id": "poc-013",
+    "accountId": "acc-042",
+    "opportunityId": "opp-022",
+    "stage": "0",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-022-success-criteria"
+  },
+  {
+    "id": "poc-014",
+    "accountId": "acc-048",
+    "opportunityId": "opp-026",
+    "stage": "Close",
+    "meddpicNotes": "M: exec dashboard visibility · E: VP Eng (confirmed) · D: security review + procurement · D: Dec board planning · P: checkout reliability · I: current tool sunset · C: staff eng champion",
+    "notionDocUrl": "https://notion.example/sentry-pocs/opp-026-success-criteria"
+  }
+]

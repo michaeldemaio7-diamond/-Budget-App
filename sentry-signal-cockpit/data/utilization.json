@@ -1,0 +1,1802 @@
+[
+  {
+    "accountId": "acc-001",
+    "module": "Errors",
+    "quotaUsagePct": 93,
+    "trend30": 93,
+    "trend60": 81,
+    "trend90": 100,
+    "seatsActivePct": 63
+  },
+  {
+    "accountId": "acc-001",
+    "module": "Transactions",
+    "quotaUsagePct": 71,
+    "trend30": 71,
+    "trend60": 82,
+    "trend90": 78,
+    "seatsActivePct": 55
+  },
+  {
+    "accountId": "acc-001",
+    "module": "Spans",
+    "quotaUsagePct": 9,
+    "trend30": 9,
+    "trend60": 2,
+    "trend90": 16,
+    "seatsActivePct": 70
+  },
+  {
+    "accountId": "acc-001",
+    "module": "SessionReplay",
+    "quotaUsagePct": 18,
+    "trend30": 18,
+    "trend60": 2,
+    "trend90": 6,
+    "seatsActivePct": 43
+  },
+  {
+    "accountId": "acc-001",
+    "module": "Crons",
+    "quotaUsagePct": 20,
+    "trend30": 20,
+    "trend60": 32,
+    "trend90": 31,
+    "seatsActivePct": 55
+  },
+  {
+    "accountId": "acc-002",
+    "module": "Errors",
+    "quotaUsagePct": 97,
+    "trend30": 97,
+    "trend60": 98,
+    "trend90": 85,
+    "seatsActivePct": 88
+  },
+  {
+    "accountId": "acc-002",
+    "module": "Transactions",
+    "quotaUsagePct": 50,
+    "trend30": 50,
+    "trend60": 51,
+    "trend90": 38,
+    "seatsActivePct": 63
+  },
+  {
+    "accountId": "acc-002",
+    "module": "Spans",
+    "quotaUsagePct": 19,
+    "trend30": 19,
+    "trend60": 18,
+    "trend90": 6,
+    "seatsActivePct": 38
+  },
+  {
+    "accountId": "acc-002",
+    "module": "SessionReplay",
+    "quotaUsagePct": 23,
+    "trend30": 23,
+    "trend60": 15,
+    "trend90": 32,
+    "seatsActivePct": 65
+  },
+  {
+    "accountId": "acc-002",
+    "module": "Crons",
+    "quotaUsagePct": 74,
+    "trend30": 74,
+    "trend60": 68,
+    "trend90": 77,
+    "seatsActivePct": 84
+  },
+  {
+    "accountId": "acc-003",
+    "module": "Errors",
+    "quotaUsagePct": 34,
+    "trend30": 34,
+    "trend60": 30,
+    "trend90": 38,
+    "seatsActivePct": 70
+  },
+  {
+    "accountId": "acc-003",
+    "module": "Transactions",
+    "quotaUsagePct": 69,
+    "trend30": 69,
+    "trend60": 78,
+    "trend90": 75,
+    "seatsActivePct": 89
+  },
+  {
+    "accountId": "acc-003",
+    "module": "Spans",
+    "quotaUsagePct": 104,
+    "trend30": 104,
+    "trend60": 103,
+    "trend90": 88,
+    "seatsActivePct": 37
+  },
+  {
+    "accountId": "acc-003",
+    "module": "SessionReplay",
+    "quotaUsagePct": 30,
+    "trend30": 30,
+    "trend60": 29,
+    "trend90": 36,
+    "seatsActivePct": 78
+  },
+  {
+    "accountId": "acc-003",
+    "module": "Crons",
+    "quotaUsagePct": 43,
+    "trend30": 43,
+    "trend60": 32,
+    "trend90": 35,
+    "seatsActivePct": 58
+  },
+  {
+    "accountId": "acc-004",
+    "module": "Errors",
+    "quotaUsagePct": 77,
+    "trend30": 77,
+    "trend60": 77,
+    "trend90": 69,
+    "seatsActivePct": 34
+  },
+  {
+    "accountId": "acc-004",
+    "module": "Transactions",
+    "quotaUsagePct": 89,
+    "trend30": 89,
+    "trend60": 72,
+    "trend90": 97,
+    "seatsActivePct": 55
+  },
+  {
+    "accountId": "acc-004",
+    "module": "Spans",
+    "quotaUsagePct": 42,
+    "trend30": 42,
+    "trend60": 34,
+    "trend90": 27,
+    "seatsActivePct": 79
+  },
+  {
+    "accountId": "acc-004",
+    "module": "SessionReplay",
+    "quotaUsagePct": 76,
+    "trend30": 76,
+    "trend60": 67,
+    "trend90": 83,
+    "seatsActivePct": 69
+  },
+  {
+    "accountId": "acc-004",
+    "module": "Crons",
+    "quotaUsagePct": 54,
+    "trend30": 54,
+    "trend60": 41,
+    "trend90": 47,
+    "seatsActivePct": 67
+  },
+  {
+    "accountId": "acc-005",
+    "module": "Errors",
+    "quotaUsagePct": 14,
+    "trend30": 14,
+    "trend60": 7,
+    "trend90": 22,
+    "seatsActivePct": 55
+  },
+  {
+    "accountId": "acc-005",
+    "module": "Transactions",
+    "quotaUsagePct": 38,
+    "trend30": 38,
+    "trend60": 32,
+    "trend90": 21,
+    "seatsActivePct": 29
+  },
+  {
+    "accountId": "acc-005",
+    "module": "Spans",
+    "quotaUsagePct": 89,
+    "trend30": 89,
+    "trend60": 97,
+    "trend90": 97,
+    "seatsActivePct": 85
+  },
+  {
+    "accountId": "acc-005",
+    "module": "SessionReplay",
+    "quotaUsagePct": 68,
+    "trend30": 68,
+    "trend60": 57,
+    "trend90": 64,
+    "seatsActivePct": 86
+  },
+  {
+    "accountId": "acc-005",
+    "module": "Crons",
+    "quotaUsagePct": 13,
+    "trend30": 13,
+    "trend60": 21,
+    "trend90": 5,
+    "seatsActivePct": 20
+  },
+  {
+    "accountId": "acc-006",
+    "module": "Errors",
+    "quotaUsagePct": 44,
+    "trend30": 44,
+    "trend60": 40,
+    "trend90": 28,
+    "seatsActivePct": 45
+  },
+  {
+    "accountId": "acc-006",
+    "module": "Transactions",
+    "quotaUsagePct": 72,
+    "trend30": 72,
+    "trend60": 75,
+    "trend90": 75,
+    "seatsActivePct": 65
+  },
+  {
+    "accountId": "acc-006",
+    "module": "Spans",
+    "quotaUsagePct": 30,
+    "trend30": 30,
+    "trend60": 14,
+    "trend90": 33,
+    "seatsActivePct": 28
+  },
+  {
+    "accountId": "acc-006",
+    "module": "SessionReplay",
+    "quotaUsagePct": 66,
+    "trend30": 66,
+    "trend60": 70,
+    "trend90": 59,
+    "seatsActivePct": 81
+  },
+  {
+    "accountId": "acc-006",
+    "module": "Crons",
+    "quotaUsagePct": 38,
+    "trend30": 38,
+    "trend60": 30,
+    "trend90": 36,
+    "seatsActivePct": 39
+  },
+  {
+    "accountId": "acc-007",
+    "module": "Errors",
+    "quotaUsagePct": 68,
+    "trend30": 68,
+    "trend60": 59,
+    "trend90": 71,
+    "seatsActivePct": 55
+  },
+  {
+    "accountId": "acc-007",
+    "module": "Transactions",
+    "quotaUsagePct": 96,
+    "trend30": 96,
+    "trend60": 102,
+    "trend90": 93,
+    "seatsActivePct": 88
+  },
+  {
+    "accountId": "acc-007",
+    "module": "Spans",
+    "quotaUsagePct": 14,
+    "trend30": 14,
+    "trend60": 6,
+    "trend90": 3,
+    "seatsActivePct": 73
+  },
+  {
+    "accountId": "acc-007",
+    "module": "SessionReplay",
+    "quotaUsagePct": 28,
+    "trend30": 28,
+    "trend60": 14,
+    "trend90": 32,
+    "seatsActivePct": 47
+  },
+  {
+    "accountId": "acc-007",
+    "module": "Crons",
+    "quotaUsagePct": 64,
+    "trend30": 64,
+    "trend60": 68,
+    "trend90": 52,
+    "seatsActivePct": 48
+  },
+  {
+    "accountId": "acc-008",
+    "module": "Errors",
+    "quotaUsagePct": 27,
+    "trend30": 27,
+    "trend60": 26,
+    "trend90": 21,
+    "seatsActivePct": 61
+  },
+  {
+    "accountId": "acc-008",
+    "module": "Transactions",
+    "quotaUsagePct": 86,
+    "trend30": 86,
+    "trend60": 74,
+    "trend90": 90,
+    "seatsActivePct": 39
+  },
+  {
+    "accountId": "acc-008",
+    "module": "Spans",
+    "quotaUsagePct": 95,
+    "trend30": 95,
+    "trend60": 83,
+    "trend90": 80,
+    "seatsActivePct": 20
+  },
+  {
+    "accountId": "acc-008",
+    "module": "SessionReplay",
+    "quotaUsagePct": 72,
+    "trend30": 72,
+    "trend60": 74,
+    "trend90": 54,
+    "seatsActivePct": 31
+  },
+  {
+    "accountId": "acc-008",
+    "module": "Crons",
+    "quotaUsagePct": 52,
+    "trend30": 52,
+    "trend60": 48,
+    "trend90": 61,
+    "seatsActivePct": 53
+  },
+  {
+    "accountId": "acc-009",
+    "module": "Errors",
+    "quotaUsagePct": 37,
+    "trend30": 37,
+    "trend60": 37,
+    "trend90": 46,
+    "seatsActivePct": 63
+  },
+  {
+    "accountId": "acc-009",
+    "module": "Transactions",
+    "quotaUsagePct": 79,
+    "trend30": 79,
+    "trend60": 69,
+    "trend90": 83,
+    "seatsActivePct": 88
+  },
+  {
+    "accountId": "acc-009",
+    "module": "Spans",
+    "quotaUsagePct": 56,
+    "trend30": 56,
+    "trend60": 65,
+    "trend90": 38,
+    "seatsActivePct": 31
+  },
+  {
+    "accountId": "acc-009",
+    "module": "SessionReplay",
+    "quotaUsagePct": 80,
+    "trend30": 80,
+    "trend60": 63,
+    "trend90": 68,
+    "seatsActivePct": 33
+  },
+  {
+    "accountId": "acc-009",
+    "module": "Crons",
+    "quotaUsagePct": 76,
+    "trend30": 76,
+    "trend60": 61,
+    "trend90": 61,
+    "seatsActivePct": 44
+  },
+  {
+    "accountId": "acc-010",
+    "module": "Errors",
+    "quotaUsagePct": 81,
+    "trend30": 81,
+    "trend60": 85,
+    "trend90": 92,
+    "seatsActivePct": 96
+  },
+  {
+    "accountId": "acc-010",
+    "module": "Transactions",
+    "quotaUsagePct": 55,
+    "trend30": 55,
+    "trend60": 47,
+    "trend90": 37,
+    "seatsActivePct": 41
+  },
+  {
+    "accountId": "acc-010",
+    "module": "Spans",
+    "quotaUsagePct": 77,
+    "trend30": 77,
+    "trend60": 63,
+    "trend90": 83,
+    "seatsActivePct": 54
+  },
+  {
+    "accountId": "acc-010",
+    "module": "SessionReplay",
+    "quotaUsagePct": 79,
+    "trend30": 79,
+    "trend60": 64,
+    "trend90": 61,
+    "seatsActivePct": 72
+  },
+  {
+    "accountId": "acc-010",
+    "module": "Crons",
+    "quotaUsagePct": 17,
+    "trend30": 17,
+    "trend60": 6,
+    "trend90": 17,
+    "seatsActivePct": 82
+  },
+  {
+    "accountId": "acc-011",
+    "module": "Errors",
+    "quotaUsagePct": 45,
+    "trend30": 45,
+    "trend60": 46,
+    "trend90": 35,
+    "seatsActivePct": 80
+  },
+  {
+    "accountId": "acc-011",
+    "module": "Transactions",
+    "quotaUsagePct": 59,
+    "trend30": 59,
+    "trend60": 67,
+    "trend90": 67,
+    "seatsActivePct": 65
+  },
+  {
+    "accountId": "acc-011",
+    "module": "Spans",
+    "quotaUsagePct": 85,
+    "trend30": 85,
+    "trend60": 72,
+    "trend90": 92,
+    "seatsActivePct": 57
+  },
+  {
+    "accountId": "acc-011",
+    "module": "SessionReplay",
+    "quotaUsagePct": 53,
+    "trend30": 53,
+    "trend60": 55,
+    "trend90": 38,
+    "seatsActivePct": 31
+  },
+  {
+    "accountId": "acc-011",
+    "module": "Crons",
+    "quotaUsagePct": 61,
+    "trend30": 61,
+    "trend60": 70,
+    "trend90": 60,
+    "seatsActivePct": 49
+  },
+  {
+    "accountId": "acc-012",
+    "module": "Errors",
+    "quotaUsagePct": 18,
+    "trend30": 18,
+    "trend60": 26,
+    "trend90": 7,
+    "seatsActivePct": 65
+  },
+  {
+    "accountId": "acc-012",
+    "module": "Transactions",
+    "quotaUsagePct": 9,
+    "trend30": 9,
+    "trend60": 19,
+    "trend90": 4,
+    "seatsActivePct": 89
+  },
+  {
+    "accountId": "acc-012",
+    "module": "Spans",
+    "quotaUsagePct": 42,
+    "trend30": 42,
+    "trend60": 32,
+    "trend90": 25,
+    "seatsActivePct": 32
+  },
+  {
+    "accountId": "acc-012",
+    "module": "SessionReplay",
+    "quotaUsagePct": 48,
+    "trend30": 48,
+    "trend60": 34,
+    "trend90": 49,
+    "seatsActivePct": 96
+  },
+  {
+    "accountId": "acc-012",
+    "module": "Crons",
+    "quotaUsagePct": 31,
+    "trend30": 31,
+    "trend60": 21,
+    "trend90": 30,
+    "seatsActivePct": 25
+  },
+  {
+    "accountId": "acc-013",
+    "module": "Errors",
+    "quotaUsagePct": 66,
+    "trend30": 66,
+    "trend60": 55,
+    "trend90": 58,
+    "seatsActivePct": 57
+  },
+  {
+    "accountId": "acc-013",
+    "module": "Transactions",
+    "quotaUsagePct": 43,
+    "trend30": 43,
+    "trend60": 28,
+    "trend90": 28,
+    "seatsActivePct": 46
+  },
+  {
+    "accountId": "acc-013",
+    "module": "Spans",
+    "quotaUsagePct": 35,
+    "trend30": 35,
+    "trend60": 20,
+    "trend90": 38,
+    "seatsActivePct": 84
+  },
+  {
+    "accountId": "acc-013",
+    "module": "SessionReplay",
+    "quotaUsagePct": 31,
+    "trend30": 31,
+    "trend60": 16,
+    "trend90": 42,
+    "seatsActivePct": 90
+  },
+  {
+    "accountId": "acc-013",
+    "module": "Crons",
+    "quotaUsagePct": 23,
+    "trend30": 23,
+    "trend60": 14,
+    "trend90": 7,
+    "seatsActivePct": 62
+  },
+  {
+    "accountId": "acc-014",
+    "module": "Errors",
+    "quotaUsagePct": 22,
+    "trend30": 22,
+    "trend60": 30,
+    "trend90": 9,
+    "seatsActivePct": 54
+  },
+  {
+    "accountId": "acc-014",
+    "module": "Transactions",
+    "quotaUsagePct": 54,
+    "trend30": 54,
+    "trend60": 55,
+    "trend90": 47,
+    "seatsActivePct": 51
+  },
+  {
+    "accountId": "acc-014",
+    "module": "Spans",
+    "quotaUsagePct": 60,
+    "trend30": 60,
+    "trend60": 52,
+    "trend90": 72,
+    "seatsActivePct": 73
+  },
+  {
+    "accountId": "acc-014",
+    "module": "SessionReplay",
+    "quotaUsagePct": 84,
+    "trend30": 84,
+    "trend60": 94,
+    "trend90": 84,
+    "seatsActivePct": 84
+  },
+  {
+    "accountId": "acc-014",
+    "module": "Crons",
+    "quotaUsagePct": 44,
+    "trend30": 44,
+    "trend60": 53,
+    "trend90": 34,
+    "seatsActivePct": 21
+  },
+  {
+    "accountId": "acc-015",
+    "module": "Errors",
+    "quotaUsagePct": 20,
+    "trend30": 20,
+    "trend60": 24,
+    "trend90": 30,
+    "seatsActivePct": 57
+  },
+  {
+    "accountId": "acc-015",
+    "module": "Transactions",
+    "quotaUsagePct": 24,
+    "trend30": 24,
+    "trend60": 18,
+    "trend90": 20,
+    "seatsActivePct": 88
+  },
+  {
+    "accountId": "acc-015",
+    "module": "Spans",
+    "quotaUsagePct": 86,
+    "trend30": 86,
+    "trend60": 70,
+    "trend90": 96,
+    "seatsActivePct": 74
+  },
+  {
+    "accountId": "acc-015",
+    "module": "SessionReplay",
+    "quotaUsagePct": 28,
+    "trend30": 28,
+    "trend60": 37,
+    "trend90": 10,
+    "seatsActivePct": 91
+  },
+  {
+    "accountId": "acc-015",
+    "module": "Crons",
+    "quotaUsagePct": 95,
+    "trend30": 95,
+    "trend60": 100,
+    "trend90": 99,
+    "seatsActivePct": 71
+  },
+  {
+    "accountId": "acc-016",
+    "module": "Errors",
+    "quotaUsagePct": 81,
+    "trend30": 81,
+    "trend60": 93,
+    "trend90": 68,
+    "seatsActivePct": 22
+  },
+  {
+    "accountId": "acc-016",
+    "module": "Transactions",
+    "quotaUsagePct": 27,
+    "trend30": 27,
+    "trend60": 38,
+    "trend90": 16,
+    "seatsActivePct": 30
+  },
+  {
+    "accountId": "acc-016",
+    "module": "Spans",
+    "quotaUsagePct": 48,
+    "trend30": 48,
+    "trend60": 55,
+    "trend90": 31,
+    "seatsActivePct": 32
+  },
+  {
+    "accountId": "acc-016",
+    "module": "SessionReplay",
+    "quotaUsagePct": 85,
+    "trend30": 85,
+    "trend60": 86,
+    "trend90": 93,
+    "seatsActivePct": 28
+  },
+  {
+    "accountId": "acc-016",
+    "module": "Crons",
+    "quotaUsagePct": 62,
+    "trend30": 62,
+    "trend60": 44,
+    "trend90": 47,
+    "seatsActivePct": 83
+  },
+  {
+    "accountId": "acc-017",
+    "module": "Errors",
+    "quotaUsagePct": 75,
+    "trend30": 75,
+    "trend60": 80,
+    "trend90": 67,
+    "seatsActivePct": 52
+  },
+  {
+    "accountId": "acc-017",
+    "module": "Transactions",
+    "quotaUsagePct": 34,
+    "trend30": 34,
+    "trend60": 29,
+    "trend90": 44,
+    "seatsActivePct": 66
+  },
+  {
+    "accountId": "acc-017",
+    "module": "Spans",
+    "quotaUsagePct": 92,
+    "trend30": 92,
+    "trend60": 94,
+    "trend90": 83,
+    "seatsActivePct": 57
+  },
+  {
+    "accountId": "acc-017",
+    "module": "SessionReplay",
+    "quotaUsagePct": 94,
+    "trend30": 94,
+    "trend60": 92,
+    "trend90": 105,
+    "seatsActivePct": 23
+  },
+  {
+    "accountId": "acc-017",
+    "module": "Crons",
+    "quotaUsagePct": 91,
+    "trend30": 91,
+    "trend60": 84,
+    "trend90": 73,
+    "seatsActivePct": 47
+  },
+  {
+    "accountId": "acc-018",
+    "module": "Errors",
+    "quotaUsagePct": 16,
+    "trend30": 16,
+    "trend60": 2,
+    "trend90": 20,
+    "seatsActivePct": 90
+  },
+  {
+    "accountId": "acc-018",
+    "module": "Transactions",
+    "quotaUsagePct": 59,
+    "trend30": 59,
+    "trend60": 49,
+    "trend90": 58,
+    "seatsActivePct": 92
+  },
+  {
+    "accountId": "acc-018",
+    "module": "Spans",
+    "quotaUsagePct": 86,
+    "trend30": 86,
+    "trend60": 85,
+    "trend90": 80,
+    "seatsActivePct": 31
+  },
+  {
+    "accountId": "acc-018",
+    "module": "SessionReplay",
+    "quotaUsagePct": 46,
+    "trend30": 46,
+    "trend60": 55,
+    "trend90": 41,
+    "seatsActivePct": 87
+  },
+  {
+    "accountId": "acc-018",
+    "module": "Crons",
+    "quotaUsagePct": 18,
+    "trend30": 18,
+    "trend60": 14,
+    "trend90": 29,
+    "seatsActivePct": 65
+  },
+  {
+    "accountId": "acc-019",
+    "module": "Errors",
+    "quotaUsagePct": 61,
+    "trend30": 61,
+    "trend60": 44,
+    "trend90": 65,
+    "seatsActivePct": 98
+  },
+  {
+    "accountId": "acc-019",
+    "module": "Transactions",
+    "quotaUsagePct": 44,
+    "trend30": 44,
+    "trend60": 46,
+    "trend90": 29,
+    "seatsActivePct": 25
+  },
+  {
+    "accountId": "acc-019",
+    "module": "Spans",
+    "quotaUsagePct": 15,
+    "trend30": 15,
+    "trend60": 14,
+    "trend90": 6,
+    "seatsActivePct": 91
+  },
+  {
+    "accountId": "acc-019",
+    "module": "SessionReplay",
+    "quotaUsagePct": 31,
+    "trend30": 31,
+    "trend60": 25,
+    "trend90": 18,
+    "seatsActivePct": 24
+  },
+  {
+    "accountId": "acc-019",
+    "module": "Crons",
+    "quotaUsagePct": 69,
+    "trend30": 69,
+    "trend60": 79,
+    "trend90": 70,
+    "seatsActivePct": 40
+  },
+  {
+    "accountId": "acc-020",
+    "module": "Errors",
+    "quotaUsagePct": 81,
+    "trend30": 81,
+    "trend60": 79,
+    "trend90": 69,
+    "seatsActivePct": 45
+  },
+  {
+    "accountId": "acc-020",
+    "module": "Transactions",
+    "quotaUsagePct": 39,
+    "trend30": 39,
+    "trend60": 51,
+    "trend90": 31,
+    "seatsActivePct": 35
+  },
+  {
+    "accountId": "acc-020",
+    "module": "Spans",
+    "quotaUsagePct": 80,
+    "trend30": 80,
+    "trend60": 64,
+    "trend90": 84,
+    "seatsActivePct": 67
+  },
+  {
+    "accountId": "acc-020",
+    "module": "SessionReplay",
+    "quotaUsagePct": 15,
+    "trend30": 15,
+    "trend60": 6,
+    "trend90": 26,
+    "seatsActivePct": 41
+  },
+  {
+    "accountId": "acc-020",
+    "module": "Crons",
+    "quotaUsagePct": 21,
+    "trend30": 21,
+    "trend60": 27,
+    "trend90": 10,
+    "seatsActivePct": 60
+  },
+  {
+    "accountId": "acc-021",
+    "module": "Errors",
+    "quotaUsagePct": 46,
+    "trend30": 46,
+    "trend60": 55,
+    "trend90": 58,
+    "seatsActivePct": 50
+  },
+  {
+    "accountId": "acc-021",
+    "module": "Transactions",
+    "quotaUsagePct": 94,
+    "trend30": 94,
+    "trend60": 82,
+    "trend90": 99,
+    "seatsActivePct": 60
+  },
+  {
+    "accountId": "acc-021",
+    "module": "Spans",
+    "quotaUsagePct": 10,
+    "trend30": 10,
+    "trend60": 2,
+    "trend90": 10,
+    "seatsActivePct": 51
+  },
+  {
+    "accountId": "acc-021",
+    "module": "SessionReplay",
+    "quotaUsagePct": 16,
+    "trend30": 16,
+    "trend60": 26,
+    "trend90": 16,
+    "seatsActivePct": 84
+  },
+  {
+    "accountId": "acc-021",
+    "module": "Crons",
+    "quotaUsagePct": 41,
+    "trend30": 41,
+    "trend60": 33,
+    "trend90": 25,
+    "seatsActivePct": 44
+  },
+  {
+    "accountId": "acc-022",
+    "module": "Errors",
+    "quotaUsagePct": 61,
+    "trend30": 61,
+    "trend60": 43,
+    "trend90": 63,
+    "seatsActivePct": 24
+  },
+  {
+    "accountId": "acc-022",
+    "module": "Transactions",
+    "quotaUsagePct": 11,
+    "trend30": 11,
+    "trend60": 5,
+    "trend90": 9,
+    "seatsActivePct": 26
+  },
+  {
+    "accountId": "acc-022",
+    "module": "Spans",
+    "quotaUsagePct": 8,
+    "trend30": 8,
+    "trend60": 2,
+    "trend90": 8,
+    "seatsActivePct": 96
+  },
+  {
+    "accountId": "acc-022",
+    "module": "SessionReplay",
+    "quotaUsagePct": 74,
+    "trend30": 74,
+    "trend60": 68,
+    "trend90": 59,
+    "seatsActivePct": 96
+  },
+  {
+    "accountId": "acc-022",
+    "module": "Crons",
+    "quotaUsagePct": 25,
+    "trend30": 25,
+    "trend60": 28,
+    "trend90": 20,
+    "seatsActivePct": 92
+  },
+  {
+    "accountId": "acc-023",
+    "module": "Errors",
+    "quotaUsagePct": 21,
+    "trend30": 21,
+    "trend60": 12,
+    "trend90": 12,
+    "seatsActivePct": 24
+  },
+  {
+    "accountId": "acc-023",
+    "module": "Transactions",
+    "quotaUsagePct": 33,
+    "trend30": 33,
+    "trend60": 17,
+    "trend90": 22,
+    "seatsActivePct": 81
+  },
+  {
+    "accountId": "acc-023",
+    "module": "Spans",
+    "quotaUsagePct": 82,
+    "trend30": 82,
+    "trend60": 85,
+    "trend90": 76,
+    "seatsActivePct": 71
+  },
+  {
+    "accountId": "acc-023",
+    "module": "SessionReplay",
+    "quotaUsagePct": 28,
+    "trend30": 28,
+    "trend60": 26,
+    "trend90": 25,
+    "seatsActivePct": 60
+  },
+  {
+    "accountId": "acc-023",
+    "module": "Crons",
+    "quotaUsagePct": 17,
+    "trend30": 17,
+    "trend60": 17,
+    "trend90": 19,
+    "seatsActivePct": 93
+  },
+  {
+    "accountId": "acc-024",
+    "module": "Errors",
+    "quotaUsagePct": 8,
+    "trend30": 8,
+    "trend60": 4,
+    "trend90": 2,
+    "seatsActivePct": 84
+  },
+  {
+    "accountId": "acc-024",
+    "module": "Transactions",
+    "quotaUsagePct": 9,
+    "trend30": 9,
+    "trend60": 17,
+    "trend90": 2,
+    "seatsActivePct": 35
+  },
+  {
+    "accountId": "acc-024",
+    "module": "Spans",
+    "quotaUsagePct": 16,
+    "trend30": 16,
+    "trend60": 14,
+    "trend90": 10,
+    "seatsActivePct": 80
+  },
+  {
+    "accountId": "acc-024",
+    "module": "SessionReplay",
+    "quotaUsagePct": 25,
+    "trend30": 25,
+    "trend60": 12,
+    "trend90": 9,
+    "seatsActivePct": 87
+  },
+  {
+    "accountId": "acc-024",
+    "module": "Crons",
+    "quotaUsagePct": 49,
+    "trend30": 49,
+    "trend60": 39,
+    "trend90": 31,
+    "seatsActivePct": 87
+  },
+  {
+    "accountId": "acc-025",
+    "module": "Errors",
+    "quotaUsagePct": 38,
+    "trend30": 38,
+    "trend60": 23,
+    "trend90": 49,
+    "seatsActivePct": 42
+  },
+  {
+    "accountId": "acc-025",
+    "module": "Transactions",
+    "quotaUsagePct": 53,
+    "trend30": 53,
+    "trend60": 35,
+    "trend90": 51,
+    "seatsActivePct": 47
+  },
+  {
+    "accountId": "acc-025",
+    "module": "Spans",
+    "quotaUsagePct": 36,
+    "trend30": 36,
+    "trend60": 33,
+    "trend90": 24,
+    "seatsActivePct": 27
+  },
+  {
+    "accountId": "acc-025",
+    "module": "SessionReplay",
+    "quotaUsagePct": 33,
+    "trend30": 33,
+    "trend60": 31,
+    "trend90": 16,
+    "seatsActivePct": 49
+  },
+  {
+    "accountId": "acc-025",
+    "module": "Crons",
+    "quotaUsagePct": 94,
+    "trend30": 94,
+    "trend60": 84,
+    "trend90": 105,
+    "seatsActivePct": 50
+  },
+  {
+    "accountId": "acc-026",
+    "module": "Errors",
+    "quotaUsagePct": 40,
+    "trend30": 40,
+    "trend60": 35,
+    "trend90": 24,
+    "seatsActivePct": 43
+  },
+  {
+    "accountId": "acc-026",
+    "module": "Transactions",
+    "quotaUsagePct": 50,
+    "trend30": 50,
+    "trend60": 54,
+    "trend90": 56,
+    "seatsActivePct": 85
+  },
+  {
+    "accountId": "acc-026",
+    "module": "Spans",
+    "quotaUsagePct": 8,
+    "trend30": 8,
+    "trend60": 8,
+    "trend90": 8,
+    "seatsActivePct": 34
+  },
+  {
+    "accountId": "acc-026",
+    "module": "SessionReplay",
+    "quotaUsagePct": 20,
+    "trend30": 20,
+    "trend60": 29,
+    "trend90": 8,
+    "seatsActivePct": 73
+  },
+  {
+    "accountId": "acc-026",
+    "module": "Crons",
+    "quotaUsagePct": 20,
+    "trend30": 20,
+    "trend60": 3,
+    "trend90": 14,
+    "seatsActivePct": 91
+  },
+  {
+    "accountId": "acc-027",
+    "module": "Errors",
+    "quotaUsagePct": 85,
+    "trend30": 85,
+    "trend60": 67,
+    "trend90": 72,
+    "seatsActivePct": 62
+  },
+  {
+    "accountId": "acc-027",
+    "module": "Transactions",
+    "quotaUsagePct": 17,
+    "trend30": 17,
+    "trend60": 6,
+    "trend90": 22,
+    "seatsActivePct": 65
+  },
+  {
+    "accountId": "acc-027",
+    "module": "Spans",
+    "quotaUsagePct": 21,
+    "trend30": 21,
+    "trend60": 17,
+    "trend90": 26,
+    "seatsActivePct": 72
+  },
+  {
+    "accountId": "acc-027",
+    "module": "SessionReplay",
+    "quotaUsagePct": 86,
+    "trend30": 86,
+    "trend60": 91,
+    "trend90": 95,
+    "seatsActivePct": 89
+  },
+  {
+    "accountId": "acc-027",
+    "module": "Crons",
+    "quotaUsagePct": 75,
+    "trend30": 75,
+    "trend60": 86,
+    "trend90": 80,
+    "seatsActivePct": 26
+  },
+  {
+    "accountId": "acc-028",
+    "module": "Errors",
+    "quotaUsagePct": 76,
+    "trend30": 76,
+    "trend60": 64,
+    "trend90": 79,
+    "seatsActivePct": 96
+  },
+  {
+    "accountId": "acc-028",
+    "module": "Transactions",
+    "quotaUsagePct": 16,
+    "trend30": 16,
+    "trend60": 13,
+    "trend90": 5,
+    "seatsActivePct": 100
+  },
+  {
+    "accountId": "acc-028",
+    "module": "Spans",
+    "quotaUsagePct": 46,
+    "trend30": 46,
+    "trend60": 54,
+    "trend90": 44,
+    "seatsActivePct": 32
+  },
+  {
+    "accountId": "acc-028",
+    "module": "SessionReplay",
+    "quotaUsagePct": 33,
+    "trend30": 33,
+    "trend60": 33,
+    "trend90": 16,
+    "seatsActivePct": 53
+  },
+  {
+    "accountId": "acc-028",
+    "module": "Crons",
+    "quotaUsagePct": 76,
+    "trend30": 76,
+    "trend60": 88,
+    "trend90": 74,
+    "seatsActivePct": 42
+  },
+  {
+    "accountId": "acc-029",
+    "module": "Errors",
+    "quotaUsagePct": 78,
+    "trend30": 78,
+    "trend60": 89,
+    "trend90": 75,
+    "seatsActivePct": 36
+  },
+  {
+    "accountId": "acc-029",
+    "module": "Transactions",
+    "quotaUsagePct": 85,
+    "trend30": 85,
+    "trend60": 95,
+    "trend90": 83,
+    "seatsActivePct": 32
+  },
+  {
+    "accountId": "acc-029",
+    "module": "Spans",
+    "quotaUsagePct": 79,
+    "trend30": 79,
+    "trend60": 91,
+    "trend90": 73,
+    "seatsActivePct": 65
+  },
+  {
+    "accountId": "acc-029",
+    "module": "SessionReplay",
+    "quotaUsagePct": 22,
+    "trend30": 22,
+    "trend60": 33,
+    "trend90": 28,
+    "seatsActivePct": 88
+  },
+  {
+    "accountId": "acc-029",
+    "module": "Crons",
+    "quotaUsagePct": 82,
+    "trend30": 82,
+    "trend60": 73,
+    "trend90": 64,
+    "seatsActivePct": 29
+  },
+  {
+    "accountId": "acc-030",
+    "module": "Errors",
+    "quotaUsagePct": 61,
+    "trend30": 61,
+    "trend60": 48,
+    "trend90": 58,
+    "seatsActivePct": 64
+  },
+  {
+    "accountId": "acc-030",
+    "module": "Transactions",
+    "quotaUsagePct": 34,
+    "trend30": 34,
+    "trend60": 41,
+    "trend90": 25,
+    "seatsActivePct": 71
+  },
+  {
+    "accountId": "acc-030",
+    "module": "Spans",
+    "quotaUsagePct": 39,
+    "trend30": 39,
+    "trend60": 39,
+    "trend90": 28,
+    "seatsActivePct": 48
+  },
+  {
+    "accountId": "acc-030",
+    "module": "SessionReplay",
+    "quotaUsagePct": 22,
+    "trend30": 22,
+    "trend60": 33,
+    "trend90": 17,
+    "seatsActivePct": 81
+  },
+  {
+    "accountId": "acc-030",
+    "module": "Crons",
+    "quotaUsagePct": 30,
+    "trend30": 30,
+    "trend60": 41,
+    "trend90": 30,
+    "seatsActivePct": 34
+  },
+  {
+    "accountId": "acc-031",
+    "module": "Errors",
+    "quotaUsagePct": 56,
+    "trend30": 56,
+    "trend60": 61,
+    "trend90": 46,
+    "seatsActivePct": 27
+  },
+  {
+    "accountId": "acc-031",
+    "module": "Transactions",
+    "quotaUsagePct": 45,
+    "trend30": 45,
+    "trend60": 39,
+    "trend90": 43,
+    "seatsActivePct": 96
+  },
+  {
+    "accountId": "acc-031",
+    "module": "Spans",
+    "quotaUsagePct": 80,
+    "trend30": 80,
+    "trend60": 86,
+    "trend90": 83,
+    "seatsActivePct": 20
+  },
+  {
+    "accountId": "acc-031",
+    "module": "SessionReplay",
+    "quotaUsagePct": 28,
+    "trend30": 28,
+    "trend60": 16,
+    "trend90": 30,
+    "seatsActivePct": 33
+  },
+  {
+    "accountId": "acc-031",
+    "module": "Crons",
+    "quotaUsagePct": 83,
+    "trend30": 83,
+    "trend60": 79,
+    "trend90": 72,
+    "seatsActivePct": 47
+  },
+  {
+    "accountId": "acc-032",
+    "module": "Errors",
+    "quotaUsagePct": 57,
+    "trend30": 57,
+    "trend60": 62,
+    "trend90": 53,
+    "seatsActivePct": 65
+  },
+  {
+    "accountId": "acc-032",
+    "module": "Transactions",
+    "quotaUsagePct": 90,
+    "trend30": 90,
+    "trend60": 82,
+    "trend90": 100,
+    "seatsActivePct": 32
+  },
+  {
+    "accountId": "acc-032",
+    "module": "Spans",
+    "quotaUsagePct": 14,
+    "trend30": 14,
+    "trend60": 12,
+    "trend90": 18,
+    "seatsActivePct": 21
+  },
+  {
+    "accountId": "acc-032",
+    "module": "SessionReplay",
+    "quotaUsagePct": 56,
+    "trend30": 56,
+    "trend60": 54,
+    "trend90": 47,
+    "seatsActivePct": 50
+  },
+  {
+    "accountId": "acc-032",
+    "module": "Crons",
+    "quotaUsagePct": 63,
+    "trend30": 63,
+    "trend60": 63,
+    "trend90": 45,
+    "seatsActivePct": 36
+  },
+  {
+    "accountId": "acc-033",
+    "module": "Errors",
+    "quotaUsagePct": 31,
+    "trend30": 31,
+    "trend60": 19,
+    "trend90": 18,
+    "seatsActivePct": 87
+  },
+  {
+    "accountId": "acc-033",
+    "module": "Transactions",
+    "quotaUsagePct": 93,
+    "trend30": 93,
+    "trend60": 89,
+    "trend90": 94,
+    "seatsActivePct": 86
+  },
+  {
+    "accountId": "acc-033",
+    "module": "Spans",
+    "quotaUsagePct": 53,
+    "trend30": 53,
+    "trend60": 52,
+    "trend90": 50,
+    "seatsActivePct": 63
+  },
+  {
+    "accountId": "acc-033",
+    "module": "SessionReplay",
+    "quotaUsagePct": 19,
+    "trend30": 19,
+    "trend60": 26,
+    "trend90": 19,
+    "seatsActivePct": 62
+  },
+  {
+    "accountId": "acc-033",
+    "module": "Crons",
+    "quotaUsagePct": 37,
+    "trend30": 37,
+    "trend60": 24,
+    "trend90": 23,
+    "seatsActivePct": 90
+  },
+  {
+    "accountId": "acc-034",
+    "module": "Errors",
+    "quotaUsagePct": 77,
+    "trend30": 77,
+    "trend60": 88,
+    "trend90": 78,
+    "seatsActivePct": 53
+  },
+  {
+    "accountId": "acc-034",
+    "module": "Transactions",
+    "quotaUsagePct": 28,
+    "trend30": 28,
+    "trend60": 27,
+    "trend90": 25,
+    "seatsActivePct": 92
+  },
+  {
+    "accountId": "acc-034",
+    "module": "Spans",
+    "quotaUsagePct": 84,
+    "trend30": 84,
+    "trend60": 96,
+    "trend90": 85,
+    "seatsActivePct": 47
+  },
+  {
+    "accountId": "acc-034",
+    "module": "SessionReplay",
+    "quotaUsagePct": 69,
+    "trend30": 69,
+    "trend60": 64,
+    "trend90": 80,
+    "seatsActivePct": 82
+  },
+  {
+    "accountId": "acc-034",
+    "module": "Crons",
+    "quotaUsagePct": 31,
+    "trend30": 31,
+    "trend60": 39,
+    "trend90": 17,
+    "seatsActivePct": 97
+  },
+  {
+    "accountId": "acc-035",
+    "module": "Errors",
+    "quotaUsagePct": 79,
+    "trend30": 79,
+    "trend60": 88,
+    "trend90": 72,
+    "seatsActivePct": 34
+  },
+  {
+    "accountId": "acc-035",
+    "module": "Transactions",
+    "quotaUsagePct": 76,
+    "trend30": 76,
+    "trend60": 77,
+    "trend90": 67,
+    "seatsActivePct": 82
+  },
+  {
+    "accountId": "acc-035",
+    "module": "Spans",
+    "quotaUsagePct": 53,
+    "trend30": 53,
+    "trend60": 62,
+    "trend90": 59,
+    "seatsActivePct": 69
+  },
+  {
+    "accountId": "acc-035",
+    "module": "SessionReplay",
+    "quotaUsagePct": 88,
+    "trend30": 88,
+    "trend60": 96,
+    "trend90": 85,
+    "seatsActivePct": 59
+  },
+  {
+    "accountId": "acc-035",
+    "module": "Crons",
+    "quotaUsagePct": 30,
+    "trend30": 30,
+    "trend60": 17,
+    "trend90": 13,
+    "seatsActivePct": 27
+  },
+  {
+    "accountId": "acc-036",
+    "module": "Errors",
+    "quotaUsagePct": 68,
+    "trend30": 68,
+    "trend60": 64,
+    "trend90": 80,
+    "seatsActivePct": 80
+  },
+  {
+    "accountId": "acc-036",
+    "module": "Transactions",
+    "quotaUsagePct": 87,
+    "trend30": 87,
+    "trend60": 97,
+    "trend90": 81,
+    "seatsActivePct": 21
+  },
+  {
+    "accountId": "acc-036",
+    "module": "Spans",
+    "quotaUsagePct": 17,
+    "trend30": 17,
+    "trend60": 10,
+    "trend90": 12,
+    "seatsActivePct": 23
+  },
+  {
+    "accountId": "acc-036",
+    "module": "SessionReplay",
+    "quotaUsagePct": 71,
+    "trend30": 71,
+    "trend60": 58,
+    "trend90": 53,
+    "seatsActivePct": 100
+  },
+  {
+    "accountId": "acc-036",
+    "module": "Crons",
+    "quotaUsagePct": 62,
+    "trend30": 62,
+    "trend60": 69,
+    "trend90": 64,
+    "seatsActivePct": 63
+  },
+  {
+    "accountId": "acc-037",
+    "module": "Errors",
+    "quotaUsagePct": 32,
+    "trend30": 32,
+    "trend60": 40,
+    "trend90": 42,
+    "seatsActivePct": 74
+  },
+  {
+    "accountId": "acc-037",
+    "module": "Transactions",
+    "quotaUsagePct": 84,
+    "trend30": 84,
+    "trend60": 80,
+    "trend90": 87,
+    "seatsActivePct": 89
+  },
+  {
+    "accountId": "acc-037",
+    "module": "Spans",
+    "quotaUsagePct": 96,
+    "trend30": 96,
+    "trend60": 87,
+    "trend90": 106,
+    "seatsActivePct": 94
+  },
+  {
+    "accountId": "acc-037",
+    "module": "SessionReplay",
+    "quotaUsagePct": 22,
+    "trend30": 22,
+    "trend60": 34,
+    "trend90": 17,
+    "seatsActivePct": 100
+  },
+  {
+    "accountId": "acc-037",
+    "module": "Crons",
+    "quotaUsagePct": 77,
+    "trend30": 77,
+    "trend60": 63,
+    "trend90": 63,
+    "seatsActivePct": 73
+  },
+  {
+    "accountId": "acc-038",
+    "module": "Errors",
+    "quotaUsagePct": 22,
+    "trend30": 22,
+    "trend60": 16,
+    "trend90": 25,
+    "seatsActivePct": 32
+  },
+  {
+    "accountId": "acc-038",
+    "module": "Transactions",
+    "quotaUsagePct": 89,
+    "trend30": 89,
+    "trend60": 78,
+    "trend90": 81,
+    "seatsActivePct": 39
+  },
+  {
+    "accountId": "acc-038",
+    "module": "Spans",
+    "quotaUsagePct": 25,
+    "trend30": 25,
+    "trend60": 34,
+    "trend90": 29,
+    "seatsActivePct": 91
+  },
+  {
+    "accountId": "acc-038",
+    "module": "SessionReplay",
+    "quotaUsagePct": 49,
+    "trend30": 49,
+    "trend60": 60,
+    "trend90": 49,
+    "seatsActivePct": 35
+  },
+  {
+    "accountId": "acc-038",
+    "module": "Crons",
+    "quotaUsagePct": 25,
+    "trend30": 25,
+    "trend60": 9,
+    "trend90": 16,
+    "seatsActivePct": 73
+  },
+  {
+    "accountId": "acc-039",
+    "module": "Errors",
+    "quotaUsagePct": 65,
+    "trend30": 65,
+    "trend60": 76,
+    "trend90": 49,
+    "seatsActivePct": 27
+  },
+  {
+    "accountId": "acc-039",
+    "module": "Transactions",
+    "quotaUsagePct": 62,
+    "trend30": 62,
+    "trend60": 55,
+    "trend90": 68,
+    "seatsActivePct": 67
+  },
+  {
+    "accountId": "acc-039",
+    "module": "Spans",
+    "quotaUsagePct": 88,
+    "trend30": 88,
+    "trend60": 70,
+    "trend90": 97,
+    "seatsActivePct": 73
+  },
+  {
+    "accountId": "acc-039",
+    "module": "SessionReplay",
+    "quotaUsagePct": 32,
+    "trend30": 32,
+    "trend60": 42,
+    "trend90": 36,
+    "seatsActivePct": 55
+  },
+  {
+    "accountId": "acc-039",
+    "module": "Crons",
+    "quotaUsagePct": 69,
+    "trend30": 69,
+    "trend60": 71,
+    "trend90": 55,
+    "seatsActivePct": 25
+  },
+  {
+    "accountId": "acc-040",
+    "module": "Errors",
+    "quotaUsagePct": 92,
+    "trend30": 92,
+    "trend60": 94,
+    "trend90": 94,
+    "seatsActivePct": 62
+  },
+  {
+    "accountId": "acc-040",
+    "module": "Transactions",
+    "quotaUsagePct": 44,
+    "trend30": 44,
+    "trend60": 34,
+    "trend90": 55,
+    "seatsActivePct": 56
+  },
+  {
+    "accountId": "acc-040",
+    "module": "Spans",
+    "quotaUsagePct": 24,
+    "trend30": 24,
+    "trend60": 18,
+    "trend90": 27,
+    "seatsActivePct": 77
+  },
+  {
+    "accountId": "acc-040",
+    "module": "SessionReplay",
+    "quotaUsagePct": 71,
+    "trend30": 71,
+    "trend60": 54,
+    "trend90": 64,
+    "seatsActivePct": 69
+  },
+  {
+    "accountId": "acc-040",
+    "module": "Crons",
+    "quotaUsagePct": 11,
+    "trend30": 11,
+    "trend60": 12,
+    "trend90": 6,
+    "seatsActivePct": 24
+  }
+]

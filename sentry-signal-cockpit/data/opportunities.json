@@ -1,0 +1,262 @@
+[
+  {
+    "id": "opp-001",
+    "accountId": "acc-003",
+    "name": "Quillstack AI — Team→Business expansion",
+    "stage": "Stage 2 — Qualified / Discovery",
+    "amount": 96000,
+    "closeDate": "2026-10-23",
+    "status": "Needs push",
+    "nextStep": "Open expansion conversation off span overage"
+  },
+  {
+    "id": "opp-002",
+    "accountId": "acc-002",
+    "name": "Vertex Grid — enterprise true-up + Replay attach",
+    "stage": "Negotiation",
+    "amount": 240000,
+    "closeDate": "2026-10-05",
+    "status": "On track",
+    "nextStep": "Legal redlines back from customer"
+  },
+  {
+    "id": "opp-003",
+    "accountId": "acc-004",
+    "name": "Harborline Pay — renewal + Crons attach",
+    "stage": "Business Validation",
+    "amount": 910000,
+    "closeDate": "2026-12-15",
+    "status": "At risk",
+    "nextStep": "Resolve P1 CS-1042 before exec sync"
+  },
+  {
+    "id": "opp-004",
+    "accountId": "acc-007",
+    "name": "Forgeline Robotics — post-Series B upgrade",
+    "stage": "Stage 2 — Qualified / Discovery",
+    "amount": 88000,
+    "closeDate": "2026-10-30",
+    "status": "On track",
+    "nextStep": "Send command-of-the-message recap"
+  },
+  {
+    "id": "opp-005",
+    "accountId": "acc-005",
+    "name": "Nimbus Games — Session Replay expansion",
+    "stage": "POC",
+    "amount": 150000,
+    "closeDate": "2026-11-14",
+    "status": "On track",
+    "nextStep": "POC readout scheduled — prep deck"
+  },
+  {
+    "id": "opp-006",
+    "accountId": "acc-008",
+    "name": "Pulsewire Media — microsite team new workspace",
+    "stage": "Technical Validation",
+    "amount": 42000,
+    "closeDate": "2026-10-18",
+    "status": "Needs push",
+    "nextStep": "Champion re-engagement before validation call"
+  },
+  {
+    "id": "opp-007",
+    "accountId": "acc-011",
+    "name": "Ember Bio — multi-year commit",
+    "stage": "Stage 0 — Initial Lead",
+    "amount": 341000,
+    "closeDate": "2027-03-02",
+    "status": "On track",
+    "nextStep": "Legal redlines back from customer"
+  },
+  {
+    "id": "opp-008",
+    "accountId": "acc-012",
+    "name": "Copper Robotics — expansion",
+    "stage": "Business Validation",
+    "amount": 333000,
+    "closeDate": "2027-01-03",
+    "status": "Needs push",
+    "nextStep": "SE to confirm technical success criteria"
+  },
+  {
+    "id": "opp-009",
+    "accountId": "acc-013",
+    "name": "Tidal Logistics — multi-year commit",
+    "stage": "Stage 0 — Initial Lead",
+    "amount": 65000,
+    "closeDate": "2026-10-19",
+    "status": "On track",
+    "nextStep": "Book exec alignment call"
+  },
+  {
+    "id": "opp-010",
+    "accountId": "acc-014",
+    "name": "Ember Logistics — tier upgrade",
+    "stage": "Stage 0 — Initial Lead",
+    "amount": 110000,
+    "closeDate": "2026-10-16",
+    "status": "On track",
+    "nextStep": "Await security questionnaire response"
+  },
+  {
+    "id": "opp-011",
+    "accountId": "acc-017",
+    "name": "Iris Robotics — renewal",
+    "stage": "Technical Validation",
+    "amount": 242000,
+    "closeDate": "2027-01-31",
+    "status": "Needs push",
+    "nextStep": "Schedule mutual action plan review"
+  },
+  {
+    "id": "opp-012",
+    "accountId": "acc-018",
+    "name": "Forge Data — new workspace",
+    "stage": "POC",
+    "amount": 379000,
+    "closeDate": "2026-12-05",
+    "status": "Needs push",
+    "nextStep": "Await security questionnaire response"
+  },
+  {
+    "id": "opp-013",
+    "accountId": "acc-023",
+    "name": "Northwind Security — expansion",
+    "stage": "POC",
+    "amount": 199000,
+    "closeDate": "2026-12-07",
+    "status": "Needs push",
+    "nextStep": "SE to confirm technical success criteria"
+  },
+  {
+    "id": "opp-014",
+    "accountId": "acc-024",
+    "name": "Beacon Health — new workspace",
+    "stage": "POC",
+    "amount": 265000,
+    "closeDate": "2026-12-10",
+    "status": "On track",
+    "nextStep": "SE to confirm technical success criteria"
+  },
+  {
+    "id": "opp-015",
+    "accountId": "acc-027",
+    "name": "Grove Labs — new workspace",
+    "stage": "Stage 0 — Initial Lead",
+    "amount": 167000,
+    "closeDate": "2027-03-10",
+    "status": "Needs push",
+    "nextStep": "Await security questionnaire response"
+  },
+  {
+    "id": "opp-016",
+    "accountId": "acc-031",
+    "name": "Grove Pay — new workspace",
+    "stage": "Technical Validation",
+    "amount": 96000,
+    "closeDate": "2027-02-20",
+    "status": "On track",
+    "nextStep": "Await security questionnaire response"
+  },
+  {
+    "id": "opp-017",
+    "accountId": "acc-035",
+    "name": "Quill Data — renewal",
+    "stage": "Business Validation",
+    "amount": 129000,
+    "closeDate": "2027-02-12",
+    "status": "Needs push",
+    "nextStep": "SE to confirm technical success criteria"
+  },
+  {
+    "id": "opp-018",
+    "accountId": "acc-036",
+    "name": "Nimbus Mobility — tier upgrade",
+    "stage": "Stage 0 — Initial Lead",
+    "amount": 350000,
+    "closeDate": "2026-10-06",
+    "status": "On track",
+    "nextStep": "Confirm MEDDPIC economic buyer"
+  },
+  {
+    "id": "opp-019",
+    "accountId": "acc-037",
+    "name": "Cinder Labs — renewal",
+    "stage": "Business Validation",
+    "amount": 239000,
+    "closeDate": "2026-12-05",
+    "status": "At risk",
+    "nextStep": "Confirm MEDDPIC economic buyer"
+  },
+  {
+    "id": "opp-020",
+    "accountId": "acc-038",
+    "name": "Tidal Bio — tier upgrade",
+    "stage": "Stage 2 — Qualified / Discovery",
+    "amount": 103000,
+    "closeDate": "2027-02-03",
+    "status": "Needs push",
+    "nextStep": "Legal redlines back from customer"
+  },
+  {
+    "id": "opp-021",
+    "accountId": "acc-039",
+    "name": "Glacier Commerce — tier upgrade",
+    "stage": "Stage 2 — Qualified / Discovery",
+    "amount": 215000,
+    "closeDate": "2026-11-30",
+    "status": "At risk",
+    "nextStep": "SE to confirm technical success criteria"
+  },
+  {
+    "id": "opp-022",
+    "accountId": "acc-042",
+    "name": "Echo Systems — expansion",
+    "stage": "Business Validation",
+    "amount": 17000,
+    "closeDate": "2027-02-28",
+    "status": "Needs push",
+    "nextStep": "Legal redlines back from customer"
+  },
+  {
+    "id": "opp-023",
+    "accountId": "acc-043",
+    "name": "Vault AI — multi-year commit",
+    "stage": "Stage 2 — Qualified / Discovery",
+    "amount": 218000,
+    "closeDate": "2026-12-30",
+    "status": "At risk",
+    "nextStep": "Book exec alignment call"
+  },
+  {
+    "id": "opp-024",
+    "accountId": "acc-046",
+    "name": "Larch Health — multi-year commit",
+    "stage": "Stage 2 — Qualified / Discovery",
+    "amount": 369000,
+    "closeDate": "2026-11-12",
+    "status": "Needs push",
+    "nextStep": "Book exec alignment call"
+  },
+  {
+    "id": "opp-025",
+    "accountId": "acc-047",
+    "name": "Argon Cloud — expansion",
+    "stage": "Stage 0 — Initial Lead",
+    "amount": 250000,
+    "closeDate": "2027-02-11",
+    "status": "On track",
+    "nextStep": "SE to confirm technical success criteria"
+  },
+  {
+    "id": "opp-026",
+    "accountId": "acc-048",
+    "name": "Orbit Mobility — expansion",
+    "stage": "Negotiation",
+    "amount": 378000,
+    "closeDate": "2027-03-12",
+    "status": "Needs push",
+    "nextStep": "Send command-of-the-message recap"
+  }
+]

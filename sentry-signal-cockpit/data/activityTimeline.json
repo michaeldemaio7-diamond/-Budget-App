@@ -1,0 +1,2393 @@
+[
+  {
+    "accountId": "acc-001",
+    "events": [
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-28T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Customer team"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-17T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Support Bot"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-002",
+    "events": [
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-16T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-15T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Customer team"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-003",
+    "events": [
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-29T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Customer team"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-24T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-004",
+    "events": [
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Customer team"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-28T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-06T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-01T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Customer team"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-01T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-005",
+    "events": [
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-20T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-09T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-06T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-06T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-03T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Support Bot"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-006",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-26T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-20T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-16T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-15T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "BigQuery Rollup"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-007",
+    "events": [
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-28T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-08T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Sasha Bloom (SE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-008",
+    "events": [
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-13T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-10T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-02T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-009",
+    "events": [
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Customer team"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-30T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Customer team"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-21T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-16T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-14T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-12T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-010",
+    "events": [
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-13T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "BigQuery Rollup"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-011",
+    "events": [
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-14T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-10T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-06T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Customer team"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-04T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-03T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-012",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-28T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-26T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-06T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-06T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Customer team"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-03T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Customer team"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-013",
+    "events": [
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-21T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-20T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-19T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-08T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-014",
+    "events": [
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-30T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Customer team"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-29T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-12T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Customer team"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-10T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-01T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-015",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Customer team"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-17T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-16T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-02T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-016",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Customer team"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Customer team"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-24T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-20T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-18T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-16T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-017",
+    "events": [
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-28T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Customer team"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-18T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-018",
+    "events": [
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-18T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-14T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-02T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-019",
+    "events": [
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-28T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-26T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-08T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-020",
+    "events": [
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-24T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Customer team"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-21T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Customer team"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-17T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-12T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Sasha Bloom (SE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-021",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-29T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-28T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Customer team"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-24T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-13T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-10T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-022",
+    "events": [
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-03T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-023",
+    "events": [
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-03T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-29T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Customer team"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-08T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "BigQuery Rollup"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-024",
+    "events": [
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-21T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Customer team"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-13T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-08T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Customer team"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-03T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-025",
+    "events": [
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Customer team"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Customer team"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-29T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-26T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-16T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-14T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-14T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-08T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Support Bot"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-026",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-30T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-27T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-19T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-027",
+    "events": [
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Customer team"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Customer team"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-27T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-21T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-10T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-01T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Customer team"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-028",
+    "events": [
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-30T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-27T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-26T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-24T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-11T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-06T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-01T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-029",
+    "events": [
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-14T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-13T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Customer team"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-30T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-29T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-13T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-13T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Customer team"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-030",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Customer team"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-20T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-17T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-17T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-14T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-14T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Marketo Automation"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-031",
+    "events": [
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-26T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Customer team"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-12T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-12T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Sasha Bloom (SE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-032",
+    "events": [
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-30T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-21T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Support Bot"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-033",
+    "events": [
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-01T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-25T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-19T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-13T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-01T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Support Bot"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-034",
+    "events": [
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-10T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Customer team"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Customer team"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-29T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-29T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-11T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-08T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-04T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-02T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-01T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-035",
+    "events": [
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-26T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-24T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-09T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-09T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Customer team"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-08-04T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Customer team"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-01T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Marketo Automation"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-036",
+    "events": [
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-09-05T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "call",
+        "tag": "Sales",
+        "timestamp": "2026-08-22T17:00:00.000Z",
+        "description": "Discovery call — value framework walkthrough",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-17T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-037",
+    "events": [
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-09-15T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Priya Natarajan (CSM)"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "description": "New project created — first spans received",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Customer team"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-28T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Customer team"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-18T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-16T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "marketing",
+        "tag": "Marketing",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Registered two engineers for the observability webinar",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-07T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Customer team"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-038",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-09-11T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Customer team"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-09-07T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Customer team"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-18T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-08T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Sasha Bloom (SE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-02T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Jordan Reyes (AE)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-039",
+    "events": [
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-09-08T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Customer team"
+      },
+      {
+        "type": "notion",
+        "tag": "Notion",
+        "timestamp": "2026-09-02T17:00:00.000Z",
+        "description": "POC doc updated in Notion (not synced to Salesforce)",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-31T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Marketo Automation"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-08-27T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "BigQuery Rollup"
+      },
+      {
+        "type": "slack",
+        "tag": "Slack",
+        "timestamp": "2026-08-20T17:00:00.000Z",
+        "description": "Deal-room thread active: POC scoping questions",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "Sales",
+        "timestamp": "2026-08-13T17:00:00.000Z",
+        "description": "Mutual action plan review with economic buyer",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  },
+  {
+    "accountId": "acc-040",
+    "events": [
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-12T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-09-09T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "email",
+        "tag": "Sales",
+        "timestamp": "2026-09-06T17:00:00.000Z",
+        "description": "AE sent command-of-the-message recap",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "meeting",
+        "tag": "SE",
+        "timestamp": "2026-09-04T17:00:00.000Z",
+        "description": "Technical deep-dive on tracing setup",
+        "actor": "Jordan Reyes (AE)"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-23T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Customer team"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-14T17:00:00.000Z",
+        "description": "Support case opened via in-app widget",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "case",
+        "tag": "Support",
+        "timestamp": "2026-08-09T17:00:00.000Z",
+        "description": "Case escalated to T2 after repro confirmed",
+        "actor": "Customer team"
+      },
+      {
+        "type": "usage",
+        "tag": "Product",
+        "timestamp": "2026-08-06T17:00:00.000Z",
+        "description": "Usage spike: error volume +40% day-over-day",
+        "actor": "Support Bot"
+      },
+      {
+        "type": "email",
+        "tag": "Marketing",
+        "timestamp": "2026-08-05T17:00:00.000Z",
+        "description": "Champion opened the launch-week nurture email",
+        "actor": "Priya Natarajan (CSM)"
+      }
+    ]
+  }
+]
